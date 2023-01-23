@@ -11,7 +11,7 @@
          <img src="#"  alt="Логотип интернет-магазина «Девайс»"></a>
     </div>
       <nav class="header-menu">
-         <form class="search" method="get" action="https://echo.htmlacademy.ru/"> <!-- изменил значение атрибута method, добавил атрибут action-->
+         <form class="search" method="get" action="https://echo.htmlacademy.ru/">
           <input name="search" class="search-input-field" placeholder="Поиск по сайту" type="search">
             <button class="search-button" type="submit">Найти</button>
         </form>
@@ -23,7 +23,7 @@
         <ul>
           <li class="main-menu-item open-submenu"><a class="main-menu-link" href="#">Каталог товаров</a><li>
               <ul class="submenu">
-                <li class="submenu-item"><a class="submenu-link" href="#">Виртуальная реальность</a></li> <!-- добавил подменю в каталог товаров-->
+                <li class="submenu-item"><a class="submenu-link" href="#">Виртуальная реальность</a></li>
                 <li class="submenu-item"><a class="submenu-link" href="#">Моноподы для селфи</a></li>
                 <li class="submenu-item"><a class="submenu-link" href="#">Экшн-камеры</a></li>
                 <li class="submenu-item"><a class="submenu-link" href="#">Фитнес-браслеты</a></li>
@@ -37,11 +37,36 @@
         </ul>
       </nav>
     </header>
-      <main class="main-index">
-        <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1> <!-- добавил скрытый заголовок первого уровня в main -->
-
-
-
+      <main class="main-index-page">
+        <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+        <section class="best-selling container">
+          <h2 class="visually-hidden">Хит продаж</h2>
+          <ol>
+            <li class="best-selling-slider-item">
+              <div>
+                <img src="#" alt="Квадрокоптер белого цвета, оснащен мощным лазером">
+              </div>
+              <div class="best-selling-info">
+                <p class="best-selling-title">Порхает как бабочка, жалит как пчела!</p>
+                <p class="best-selling-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
+                  стандартную камеру.</p>
+                <a class="best-selling-link button" href="#">Подробнее</a>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><b>800 м</b></td>
+                      <td><b>50 м</b></td>
+                    </tr>
+                    <tr>
+                      <td>Дальность полёта</td>
+                      <td>Радиус поражения</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ol>
+        </section>
       </main>
   </body>
 </html>
