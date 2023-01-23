@@ -5,27 +5,43 @@
     <title>Интернет-магазин «Девайс»</title>
   </head>
   <body>
-   <header class="page-header">
+   <header class="header-page">
     <div class="header-logo">
-     <a href="#"><img src="#"  alt="Логотип интернет-магазина «Девайс»"></a>
+        <a href="#">
+         <img src="#"  alt="Логотип интернет-магазина «Девайс»"></a>
     </div>
-    <nav class="heder-menu">
-      <form class="search" method="post">
-        <input name="search" class="search-input-field" placeholder="Поиск по сайту" type="search">
-        <button class="search-button" type="submit">Найти</button>
-      </form>
-        <button class="login-button" type="button"> <img src="#" alt="">Войти</button>
-        <a class="compare-button" type="button" href="#"><img src="#" alt="">Сравнить</a>
-        <button class="cart-button" type="button"><img src="#" alt="">Корзина</button>
-    </nav>
+      <nav class="header-menu">
+         <form class="search" method="get" action="https://echo.htmlacademy.ru/"> <!-- изменил значение атрибута method, добавил атрибут action-->
+          <input name="search" class="search-input-field" placeholder="Поиск по сайту" type="search">
+            <button class="search-button" type="submit">Найти</button>
+        </form>
+          <button class="login-button" type="button"> <img src="#" alt="">Войти</button>
+          <a class="compare-button" href="#"><img src="#" alt="">Сравнить</a>
+          <button class="cart-button" type="button"><img src="#" alt="">Корзина</button>
+      </nav>
       <nav class="main-menu">
-        <ul></ul>
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-   </header>
+        <ul>
+          <li class="main-menu-item open-submenu"><a class="main-menu-link" href="#">Каталог товаров</a><li>
+              <ul class="submenu">
+                <li class="submenu-item"><a class="submenu-link" href="#">Виртуальная реальность</a></li> <!-- добавил подменю в каталог товаров-->
+                <li class="submenu-item"><a class="submenu-link" href="#">Моноподы для селфи</a></li>
+                <li class="submenu-item"><a class="submenu-link" href="#">Экшн-камеры</a></li>
+                <li class="submenu-item"><a class="submenu-link" href="#">Фитнес-браслеты</a></li>
+                <li class="submenu-item"><a class="submenu-link" href="#">Умные часы</a></li>
+                <li class="submenu-item"><a class="submenu-link" href="#">Квадрокоптеры</a></li>
+              </ul>
+          </li>
+          <li class="main-menu-item"><a class="main-menu-link" href="#">Доставка</a></li>
+          <li class="main-menu-item" ><a class="main-menu-link" href="#">Гарантия</a></li>
+          <li class="main-menu-item" ><a class="main-menu-link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+      <main class="main-index">
+        <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1> <!-- добавил скрытый заголовок первого уровня в main -->
+
+
+
+      </main>
   </body>
 </html>
