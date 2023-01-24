@@ -7,12 +7,13 @@
   <body>
    <header class="header-page">
     <div class="header-logo">
-        <a href="#">
-         <img src="#"  alt="Логотип интернет-магазина «Девайс»"></a>
+      <a href="#">
+        <img src="#"  alt="Логотип интернет-магазина «Девайс»">
+      </a>
     </div>
       <nav class="header-menu">
          <form class="search" method="get" action="https://echo.htmlacademy.ru/">
-          <input class="search-input-field" name="search" placeholder="Поиск по сайту" type="search"> <!-- изменил в соответствие с кодгайдом HTML Academy -->
+          <input class="search-input-field" name="search" placeholder="Поиск по сайту" type="search">
             <button class="search-button" type="submit">Найти</button>
         </form>
           <button class="login-button" type="button"> <img src="#" alt="">Войти</button>
@@ -39,7 +40,7 @@
     </header>
     <main class="main-index-page">
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
-      <section class="best-selling container">
+      <section class="best-selling">
         <h2 class="visually-hidden">Хит продаж</h2>
         <ol class="best-selling-slider-item">
           <li class="quadcopter">
@@ -50,10 +51,10 @@
                 стандартную камеру.</p>
               <a class="best-selling-link" href="#">Подробнее</a>
               <table>
-                  <tr>
-                    <td><b>800 м</b></td>
-                    <td><b>50 м</b></td>
-                  </tr>
+                <tr>
+                  <td><b>800 м</b></td>
+                  <td><b>50 м</b></td>
+                </tr>
                   <tr>
                     <td>Дальность полёта</td>
                     <td>Радиус поражения</td>
@@ -68,45 +69,86 @@
               <p class="best-selling-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="best-selling-link" href="#">Подробнее</a>
               <table>
-                  <tr>
-                    <td><b>48 часов </b></td>
-                  </tr>
-                  <tr>
-                    <td>Без подзарядки</td>
-                  </tr>
+                <tr>
+                  <td><b>48 часов </b></td>
+                </tr>
+                <tr>
+                  <td>Без подзарядки</td>
+                </tr>
               </table>
             </div>
           </li>
-          <li class="selfie stick">
+          <li class="selfie-stick">
             <img src="#" alt="Три селфи палки черного цвета, одной модели, в разных положениях.">
             <div class="best-selling-info">
               <p class="best-selling-title">Делай селфи, как Бен Стиллер!</p>
               <p class="best-selling-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a class="best-selling-link" href="#">Подробнее</a>
               <table>
-                  <tr>
-                    <td><b>Длина палки </b></td>
-                    <td><b>Вес палки</b></td>
-                    <td><b>Материал</b></td>
-                  </tr>
-                  <tr>
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
+                <tr>
+                  <td><b>Длина палки </b></td>
+                  <td><b>Вес палки</b></td>
+                  <td><b>Материал</b></td>
+                </tr>
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
               </table>
-              <div class="arrows-best-selling"> <!-- добавил кнопки переключения слайдов -->
-                <button class="arrow-back" type="button">&larr;</button>
-                <button class="arrow-next" type="button">&rarr;</button>
+              <div class="arrows-best-selling">
+                <button class="arrow-back" type="button" aria-label="Преидущий слайд">&larr;</button>
+                <button class="arrow-next" type="button" aria-label="Следующий слайд">&rarr;</button>
               </div>
               <div class="target-best-selling">
-                <button class="target-1 target-active" type="button">&#9675;</button>
-                <button class="target-2" type="button">&#9675;</button>
-                <button class="target-3" type="button">&#9675;</button>
+                <button class="target-1 target-active" type="button" aria-label="Первый слайд">&#9675;</button>
+                <button class="target-2" type="button" aria-label="Второй слайд">&#9675;</button>
+                <button class="target-3" type="button" aria-label="Третий слайд">&#9675;</button>
               </div>
             </div>
           </li>
         </ol>
+      </section>
+      <section class="product-categories">
+        <h2 class="visually-hidden">Категории товаров</h2>
+          <ul class="product-categories-list">
+            <li class="product-categories-item">
+              <a class="product-categories-item-link" href="#">
+                <img src="#" alt="Виртуальная реальность">
+                <span>Виртуальная реальность</span>
+              </a>
+            </li>
+            <li class="product-categories-item">
+              <a class="product-categories-item-link" href="#">
+                <img src="#" alt="Моноподы для селфи">
+                <span>Моноподы для селфи</span>
+              </a>
+            </li>
+            <li class="product-categories-item">
+              <a class="product-categories-item-link" href="#">
+                <img src="#" alt="Экшн-камеры">
+                <span>Экшн-камеры</span>
+              </a>
+            </li>
+            <li class="product-categories-item">
+              <a class="product-categories-item-link" href="#">
+                <img src="#" alt="Фитнес-браслеты">
+                <span>Фитнес-браслеты</span>
+              </a>
+            </li>
+            <li class="product-categories-item">
+              <a class="product-categories-item-link" href="#">
+                <img src="#" alt="Умные часы">
+                <span>Умные часы</span>
+              </a>
+            </li>
+            <li class="product-categories-item">
+              <a class="product-categories-item-link" href="#">
+                <img src="#" alt="Квадрокоптеры">
+                <span>Квадрокоптеры</span>
+              </a>
+            </li>
+          </ul>
       </section>
     </main>
 </body>
