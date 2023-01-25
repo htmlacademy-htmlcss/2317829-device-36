@@ -5,13 +5,13 @@
     <title>Интернет-магазин «Девайс»</title>
   </head>
   <body>
-   <header class="header-page">
+    <header class="header-page">
     <div class="header-logo">
       <a href="#">
         <img src="#"  alt="Логотип интернет-магазина «Девайс»"></a>
     </div>
       <nav class="header-menu">
-        <ul> <!-- Поместил элементы меню шапки в неупорядоченный список-->
+        <ul>
           <li>
             <form class="search" method="get" action="https://echo.htmlacademy.ru/">
               <input class="search-input-field" name="search" placeholder="Поиск по сайту" type="search">
@@ -74,7 +74,7 @@
             <div class="best-selling-info">
               <p class="best-selling-title">Худеем правильно!</p>
               <p class="best-selling-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a class="best-selling-link" href="#">Подробнее</a>
+              <a class="best-selling-link button" href="#">Подробнее</a>
               <table>
                 <tr>
                   <td><b>48 часов </b></td>
@@ -90,7 +90,7 @@
             <div class="best-selling-info">
               <p class="best-selling-title">Делай селфи, как Бен Стиллер!</p>
               <p class="best-selling-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a class="best-selling-link" href="#">Подробнее</a>
+              <a class="best-selling-link button" href="#">Подробнее</a>
               <table>
                 <tr>
                   <td><b>Длина палки </b></td>
@@ -156,30 +156,68 @@
               </a>
             </li>
           </ul>
-          <section class="services">
-            <h2 class="visually-hidden">Услуги</h2>
-            <ul class="services-list">
-              <li class="services-delivery">
-                <h3 class="visually-hidden">Доставка</h3> <!-- Скрыл заголовки кнопки -->
-                <button class="button-delivery" type="button">Доставка</button> <!-- Добавил кнопки -->
-                <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                <img src="#" alt="Доставка">
-              </li>
-              <li class="services-guarantee">
-                <h3 class="visually-hidden">Гарантия</h3> <!-- Скрыл заголовки кнопки -->
-                <button class="button-guarantee" type="button">Гарантия</button> <!-- Добавил кнопки -->
-                <p class="service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                <img src="#" alt="Гарантия">
-              </li>
-              <li class="services-сredit">
-                <h3 class="visually-hidden">Кредит</h3> <!-- Скрыл заголовки кнопки -->
-                <button class="button-сredit" type="button">Кредит</button> <!-- Добавил кнопки -->
-                <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                <img src="#" alt="Кредит">
-              </li>
-            </ul>
-          </section>
+        </section>
+        <section class="services">
+          <h2 class="visually-hidden">Услуги</h2>
+          <ul class="services-list">
+            <li class="services-delivery">
+              <h3 class="visually-hidden">Доставка</h3>
+              <button class="button-delivery" type="button">Доставка</button>
+              <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <img src="#" alt="Доставка">
+            </li>
+            <li class="services-guarantee">
+              <h3 class="visually-hidden">Гарантия</h3>
+              <button class="button-guarantee" type="button">Гарантия</button>
+              <p class="service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <img src="#" alt="Гарантия">
+            </li>
+            <li class="services-сredit">
+              <h3 class="visually-hidden">Кредит</h3>
+              <button class="button-сredit" type="button">Кредит</button>
+              <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              <img src="#" alt="Кредит">
+            </li>
+          </ul>
+        </section>
+        <section class="delivering-rare"> <!-- Разметил секцию с кнопкой на модальное окно для доставки редких товаров -->
+          <button class="delivering-rare-link" type="button">
+            <img class="deliverycar" src="#" alt="Грузовик">
+            <span>Доставим редкий товар под заказ</span>>
+            <img class="deliverycar" src="#" alt="i">
+          </button >
+        </section>
+        <section class="about-us"> <!-- Разметил секцию о компании и способах доставки другие регионы России -->
+          <h2 class="about-us-title"> О нас</h2>
+          <p> Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <ul class="delivery-list">
+            <li class="delivery-item">
+              <a class="delivery-button" href="#">Меловые линии</a>
+            </li>
+            <li class="delivery-item">
+              <a class="delivery-button" href="#">СДИК</a>
+            </li>
+            <li class="delivery-item">
+             <a class="delivery-button" href="#">ТоксБерри</a>
+            </li>
+          </ul>
+        <a class="about-us-link button" href="#">Подробнее о нас</a>
+      </section>
+      <section class="contacts"> <!-- Разметил секцию с адресом компании и режимом её работы -->
+        <h2 class="contacts-title">Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+        <address>
+          <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <a class="contacts-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+        </address>
+        <h3 class="timeline-title">Время работы</h3>
+        <ul class="timeline-list">
+          <li class="timeline-item">пн-пт: с 10:00 до 22:00</li>
+          <li class="timeline-item">сб-вс: с 10:00 до 19:00</li>
+        </ul>
+        <a class="feedback-link button" href="#">Напишите нам</a>
       </section>
     </main>
-</body>
+  </body>
 </html>
