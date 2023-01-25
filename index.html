@@ -8,29 +8,36 @@
    <header class="header-page">
     <div class="header-logo">
       <a href="#">
-        <img src="#"  alt="Логотип интернет-магазина «Девайс»">
-      </a>
+        <img src="#"  alt="Логотип интернет-магазина «Девайс»"></a>
     </div>
       <nav class="header-menu">
-         <form class="search" method="get" action="https://echo.htmlacademy.ru/">
-          <input class="search-input-field" name="search" placeholder="Поиск по сайту" type="search">
-            <button class="search-button" type="submit">Найти</button>
-        </form>
-          <button class="login-button" type="button"> <img src="#" alt="">Войти</button>
-          <a class="compare-button" href="#"><img src="#" alt="">Сравнить</a>
-          <button class="cart-button" type="button"><img src="#" alt="">Корзина</button>
+        <ul> <!-- Поместил элементы меню шапки в неупорядоченный список-->
+          <li>
+            <form class="search" method="get" action="https://echo.htmlacademy.ru/">
+              <input class="search-input-field" name="search" placeholder="Поиск по сайту" type="search">
+              <button class="search-button" type="submit">Найти
+              </button>
+            </form>
+          </li>
+          <li><button class="login-button" type="button"><img src="#" alt="">Войти</button></li>
+          <li><a class="compare-button" href="#"><img src="#" alt="">Сравнить</a></li>
+          <li><button class="cart-button" type="button"><img src="#" alt="">Корзина</button></li>
+        </ul>
       </nav>
       <nav class="main-menu">
         <ul>
-          <li class="main-menu-item open-submenu"><a class="main-menu-link" href="#">Каталог товаров</a><li>
-              <ul class="submenu">
-                <li class="submenu-item"><a class="submenu-link" href="#">Виртуальная реальность</a></li>
-                <li class="submenu-item"><a class="submenu-link" href="#">Моноподы для селфи</a></li>
-                <li class="submenu-item"><a class="submenu-link" href="#">Экшн-камеры</a></li>
-                <li class="submenu-item"><a class="submenu-link" href="#">Фитнес-браслеты</a></li>
-                <li class="submenu-item"><a class="submenu-link" href="#">Умные часы</a></li>
-                <li class="submenu-item"><a class="submenu-link" href="#">Квадрокоптеры</a></li>
-              </ul>
+          <li class="main-menu-item open-submenu">
+            <a class="main-menu-link" href="#">Каталог товаров
+            </a>
+          <li>
+            <ul class="submenu">
+              <li class="submenu-item"><a class="submenu-link" href="#">Виртуальная реальность</a></li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Моноподы для селфи</a></li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Экшн-камеры</a></li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Фитнес-браслеты</a></li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Умные часы</a></li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Квадрокоптеры</a></li>
+            </ul>
           </li>
           <li class="main-menu-item"><a class="main-menu-link" href="#">Доставка</a></li>
           <li class="main-menu-item" ><a class="main-menu-link" href="#">Гарантия</a></li>
@@ -153,17 +160,20 @@
             <h2 class="visually-hidden">Услуги</h2>
             <ul class="services-list">
               <li class="services-delivery">
-                <h3 class="service-title">Доставка</h3>
+                <h3 class="visually-hidden">Доставка</h3> <!-- Скрыл заголовки кнопки -->
+                <button class="button-delivery" type="button">Доставка</button> <!-- Добавил кнопки -->
                 <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 <img src="#" alt="Доставка">
               </li>
               <li class="services-guarantee">
-                <h3 class="service-title">Гарантия</h3>
+                <h3 class="visually-hidden">Гарантия</h3> <!-- Скрыл заголовки кнопки -->
+                <button class="button-guarantee" type="button">Гарантия</button> <!-- Добавил кнопки -->
                 <p class="service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
                 <img src="#" alt="Гарантия">
               </li>
               <li class="services-сredit">
-                <h3 class="service-title">Кредит</h3>
+                <h3 class="visually-hidden">Кредит</h3> <!-- Скрыл заголовки кнопки -->
+                <button class="button-сredit" type="button">Кредит</button> <!-- Добавил кнопки -->
                 <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                 <img src="#" alt="Кредит">
               </li>
