@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Интернет-магазин «Девайс»</title>
+    <title>Моноподы для селфи — Каталог товаров / Интернет-магазин «Девайс»</title>
   </head>
   <body>
     <header class="header-page">
@@ -63,22 +63,62 @@
 
     <main class="catalog-page">
     <!-- Cекция внутреннего заголовка с хлебными крошками -->
-      <section class="inner-header">
+      <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная
-            </a>
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-             <a class="breadcrumbs-link" href="#">Каталог товаров
-             </a>
+             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <span class="breadcrumbs-link">Моноподы для селфи
-            </span>
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
         </ul>
+      </header>
+      <!--Cекция фильтрации товаров -->
+      <section class="product-filter">
+        <h2 class="product-filter-title">Фильтр:</h2>
+        <form class="product-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="cost-filter-group">
+            <legend class="cost-subtitle">Стоимость</legend>
+            <label class="cost-range">
+              <input class="cost-control-input" type="range" min="0" max="5000" step="500" value="0" name="min">от 0
+            </label>
+            <label class="cost-control">
+              <input class="cost-control-input" type="range" min="0" max="5000" step="500" value="3000" name="max">до 5000
+            </label>
+          </fieldset>
+          <fieldset class="color-filter-group">
+            <legend class="color-subtitle">Цвет</legend>
+            <label class="color-control">
+              <input class="color-control-input" type="checkbox" name="black" checked>Чёрный
+            </label>
+            <label class="color-control">
+              <input class="color-control-input" type="checkbox" name="white" checked>Белый
+            </label>
+            <label class="color-control">
+              <input class="color-control-input" type="checkbox" name="blue">Синий
+            </label>
+            <label class="color-control">
+              <input class="color-control-input" type="checkbox" name="red">Красный
+            </label>
+            <label class="color-control">
+              <input class="color-control-input" type="checkbox" name="pink">Розовый
+            </label>
+          </fieldset>
+          <fieldset class="bluetooth-filter-group">
+            <legend class="bluetooth-filter-subtitle">Bluetooth</legend>
+            <label class="bluetooth-control">
+              <input class="bluetooth-control-input" type="radio" name="bluetooth" value="enabled" checked>Есть
+            </label>
+            <label class="bluetooth-control">
+              <input class="bluetooth-control-input" type="radio" name="bluetooth" value="disabled">Нет
+            </label>
+          </fieldset>
+          <button class="product-filter-button" type="submit">Показать</button>
+        </form>
       </section>
     </main>
 
