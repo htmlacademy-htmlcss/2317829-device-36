@@ -61,10 +61,10 @@
       </nav>
     </header>
 
-    <main class="catalog-page">
+    <main class="main-catalog-page">
     <!-- Cекция внутреннего заголовка с хлебными крошками -->
-      <header class="inner-header">
-        <h1 class="inner-header-title">Моноподы для селфи</h1>
+      <header class="inner-catalog-header">
+        <h1 class="inner-catalog-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -120,8 +120,23 @@
           <button class="product-filter-button" type="submit">Показать</button>
         </form>
       </section>
+      <!--Cекция сортировки товаров -->
+      <section class="product-sorting">
+        <form class="sorting-form">
+          <h2 class="sorting-title">Сортировка:</h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="default">По умолчанию </option>
+            <option value="popular" selected>Популярные</option>
+            <option value="cheap">По возрастанию цены</option>
+            <option value="expensive">По убыванию цены</option>
+          </select>
+          <div class="sort">
+            <button class="sorting-button" type="button">&#8593;</button>
+            <button class="sorting-button" type="button">&#8595;</button>
+          </div>
+      </section>
+      </form>
     </main>
-
     <footer class="footer-page">
       <nav class="features">
         <a class="footer-logo" href="#">
