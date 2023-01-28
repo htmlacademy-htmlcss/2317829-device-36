@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Моноподы для селфи — Каталог товаров / Интернет-магазин «Девайс»</title>
+    <base href="https://htmlacademy-htmlcss.github.io/2317829-device-36/2/">
+</head>
+
+  <body>
+    <header class="header-page">
+      <nav class="header-menu">
+        <a class="header-logo" href="index.html">
+          <img class="logo-icon" src="#" alt="Логотип интернет-магазина «Девайс».">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <form class="search" method="get" action="https://echo.htmlacademy.ru/">
+              <input class="search-input-field" name="search" placeholder="Поиск по сайту" type="search">
+              <button class="search-button" type="submit">
+                <span>Найти</span>
+              </button>
+            </form>
+          </li>
+          <li class="navigation-item">
+            <button class="login-button" type="button"><img src="#" alt="">
+              <span>Коля Петухов</span>
+            </button>
+          </li>
+          <li class="navigation-item">
+            <a class="logout-button" href="#">Выйти</a>
+          </li>
+          <li class="navigation-item">
+            <a class="compare-link" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-item">
+            <span>2</span>
+            <a class="cart-link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main-menu">
+        <ul>
+          <li class="main-menu-item open-submenu">
+            <a class="main-menu-link" href="#">Каталог товаров</a>
+            <ul class="submenu">
+              <li class="submenu-item"><a class="submenu-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="submenu-item"><a class="submenu-link">Моноподы для селфи</a>
+              </li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Умные часы</a>
+              </li>
+              <li class="submenu-item"><a class="submenu-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-menu-item"><a class="main-menu-link" href="#">Доставка</a>
+          </li>
+          <li class="main-menu-item"><a class="main-menu-link" href="#">Гарантия</a>
+          </li>
+          <li class="main-menu-item"><a class="main-menu-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-catalog-page">
+      <header class="inner-catalog-header">
+        <h1 class="inner-catalog-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </header>
+      <section class="product-filter">
+        <h2 class="product-filter-title">Фильтр:</h2>
+        <form class="product-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="cost-filter-group">
+            <legend class="cost-subtitle">Стоимость</legend>
+            <label class="cost-range">
+              <input class="cost-control-input" type="range" min="0" max="5000" step="500" value="0" name="min">от 0
+            </label>
+            <label class="cost-control">
+              <input class="cost-control-input" type="range" min="0" max="5000" step="500" value="3000" name="max">до
+              5000
+            </label>
+          </fieldset>
+          <fieldset class="color-filter-group">
+            <legend class="color-subtitle">Цвет</legend>
+            <label class="color-control">
+              <input class="color-control-input" type="checkbox" name="black" checked>Чёрный
+            </label>
+            <label class="color-control">
+              <input class="color-control-input" type="checkbox" name="white" checked>Белый
+            </label>
+            <label class="color-control">
+              <input class="color-control-input" type="checkbox" name="blue">Синий
+            </label>
+            <label class="color-control">
+              <input class="color-control-input" type="checkbox" name="red">Красный
+            </label>
+            <label class="color-control">
+              <input class="color-control-input" type="checkbox" name="pink">Розовый
+            </label>
+          </fieldset>
+          <fieldset class="bluetooth-filter-group">
+            <legend class="bluetooth-filter-subtitle">Bluetooth</legend>
+            <label class="bluetooth-control">
+              <input class="bluetooth-control-input" type="radio" name="bluetooth" value="enabled" checked>Есть
+            </label>
+            <label class="bluetooth-control">
+              <input class="bluetooth-control-input" type="radio" name="bluetooth" value="disabled">Нет
+            </label>
+          </fieldset>
+          <button class="product-filter-button" type="submit">Показать</button>
+        </form>
+      </section>
+      <section class="product-sorting">
+        <form class="sorting-form">
+          <h2 class="sorting-title">Сортировка:</h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="default">По умолчанию </option>
+            <option value="popular" selected>Популярные</option>
+            <option value="cheap">По цене</option>
+          </select>
+          <div class="sorting">
+            <button class="sorting-button" type="button" aria-label="Вверх">&#8593;</button>
+            <button class="sorting-button" type="button" aria-label="Вниз">&#8595;</button>
+          </div>
+        </form>
+        <ul class="product-list">
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Любительская селфи-палка, держатель хромированный.">
+            </a>
+            <h3 class="product-card-title">Любительская селфи-палка</h3>
+            <span class="product-card-price">500 ₽</span>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Профессиональная селфи-палка, черного цвета.">
+            </a>
+            <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+            <span class="product-card-price">1500 ₽</span>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Непотопляемая селфи-палка, желтого цвета.">
+            </a>
+            <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+            <span class="product-card-price">2500 ₽</span>
+          </li>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Селфи-палка в форме человеческой руки.">
+            </a>
+            <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+            <span class="product-card-price">1500 ₽</span>
+          </li>
+        </ul>
+        <div class="product-card-pagination">
+          <button class="show-more" type="button">Загрузить ещё</button>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">15</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next" href="#">Вперед</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-page">
+      <nav class="features">
+        <a class="footer-logo" href="#">
+          <img class="footer-logo-icon" src="index.html" alt="Логотип интернет-магазина «Девайс».">
+        </a>
+        <h3 class="visually-hidden">Адрес</h3>
+        <p class="footer-address"> Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <ul class="features-list">
+          <li class="features-item">
+            <a class="features-link" href="#">Доставка</a>
+          </li>
+          <li class="features-item">
+            <a class="features-link" href="#">Гарантия</a>
+          </li>
+          <li class="features-item">
+            <a class="features-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <h3 class="visually-hidden">Телефон</h3>
+        <p class="footer-phone">
+          <a class="phone-link" href="tel:78128121212">+7 (812) 812-12-12</a>
+        </p>
+      </nav>
+      <section class="socials">
+        <h3 class="visually-hidden">Социальные сети</h3>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="socials-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютьюб</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="socials-link" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+        <p class="about-text">
+          <a class="html-academy-link" href="https://htmlacademy.ru/">
+            <img class="html-academy-icon" src="#" alt=".html academy">
+          </a>
+        </p>
+      </section>
+    </footer>
+  </body>
+
+</html>
