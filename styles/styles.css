@@ -20,12 +20,82 @@
   font-display: swap;
 }
 body {
-  font-family: "Rubik";
-
+  font-family: "Rubik", sans-serif;
   font-size: 14px;
-  line-height: 18px;;
+  line-height: 18px;
+  color: #444444;
+  background-color: #ffffff;
 }
 .visually-hidden {
   position: fixed;
   transform: scale(0);
+}
+
+.header-page {
+  background-color: #ffe17f;
+  width: 1160px;
+  height: 180;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 40px;
+}
+.logo-icon{
+  margin-top: -20px;
+  margin-left: 60px;
+}
+
+.navigation-list {
+  list-style-type: none;
+  display: flex;
+}
+.navigation-item{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  margin: 0 10px; /* тестовое расстояние между пунктами */
+}
+.search-button{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.login-button{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.main-menu-list{
+  list-style-type: none;
+  display: flex;
+}
+.main-menu-link{
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 10px; /* тестовое расстояние между пунктами */
+}
+.submenu-item{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.product-icon { /* тест */
+  background-color: #ffe17f;
 }
