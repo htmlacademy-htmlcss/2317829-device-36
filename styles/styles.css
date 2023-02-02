@@ -30,11 +30,11 @@ body {
   position: fixed;
   transform: scale(0);
 }
-
+/* Секция шапки */
 .header-page {
   background-color: #ffe17f;
-  width: 1160px;
-  height: 180;
+  min-width: 1160px;
+  min-height: 300px;
   margin-left: 140px;
   margin-right: 140px;
   margin-top: 40px;
@@ -55,7 +55,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  margin: 0 10px; /* тестовое расстояние между пунктами */
+  margin: 0 10px; /* временное расстояние между пунктами */
 }
 .search-button{
   font-family: "Rubik", sans-serif;
@@ -86,7 +86,16 @@ body {
   letter-spacing: 0.2em;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 10px; /* тестовое расстояние между пунктами */
+  margin: 0 10px; /* временное расстояние между пунктами */
+}
+.submenu{
+  display: none;
+}
+.open-submenu:focus ~ .submenu,
+.open-submenu:active ~ .submenu,
+.submenu:hover
+{
+   display: block;
 }
 .submenu-item{
   font-family: "Rubik", sans-serif;
@@ -96,6 +105,31 @@ body {
   line-height: 30px;
   color: #000000;
 }
-.product-icon { /* тест */
+
+
+/* Секция продуктовых категорий */
+.product-categories{
+  min-width: 1160px;
+  min-height: 253px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-icon {
   background-color: #ffe17f;
+  margin: 40px;
+}
+.product-categories-name{
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  width: 160px;
+  min-height: 60px;
+  letter-spacing: -0.02em;
+}
+.product-categories-list{
+  text-align: center;
+  list-style-type: none;
+  display: flex;
 }
