@@ -50,10 +50,6 @@ body {
   margin-left: 60px;
 }
 
-.navigation-list {
-
-}
-
 .navigation-item {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -61,8 +57,16 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+}
 
-
+.search-input-field {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .search-button {
@@ -175,20 +179,25 @@ body {
   background-color: #ffe17f;
 
 }
+
 .product-categories-list {
   max-width: 1160px;
   min-height: 253px;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  /* отключает стандартные стили списка */
   list-style-type: none;
+  /* Поворачивает список в горизонтальное положение */
   display: flex;
 }
-.product-categories-item{
+
+.product-categories-item {
   width: 160px;
   height: 253px;
   padding: 20px;
 }
+
 .product-categories-name {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -200,9 +209,6 @@ body {
   letter-spacing: -0.02em;
   display: flex;
   padding-top: 32px;
-
-
-
 }
 
 /* Секция услуг*/
@@ -225,6 +231,18 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+}
+
+.services-delivery-slide:after {
+  content: url('../images/main/delivery.svg');
+}
+
+.services-guarantee-slide:after {
+  content: url('../images/main/guarantee.svg');
+}
+
+.service-сredit-slide:after {
+  content: url('../images/main/credit.svg');
 }
 
 .services-description {
@@ -250,7 +268,9 @@ body {
 }
 
 /* Секция информации о компании */
-.about-us-title, .contacts-title, .subscribe-title{
+.about-us-title,
+.contacts-title,
+.subscribe-title {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -258,18 +278,22 @@ body {
   line-height: 50px;
   color: #000000;
 }
-.about-us p, .contacts p{
+
+.about-us p,
+.contacts p {
   font-family: "Rubik", sans-serif;
-  font-style: normal;p
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
 }
-.delivery-item{
+
+.delivery-item {
   padding-top: 19px;
 }
-.delivery-list{
+
+.delivery-list {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -278,7 +302,8 @@ body {
   letter-spacing: -0.02em;
   color: #000000;
 }
-.contacts h3{
+
+.contacts h3 {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -286,11 +311,100 @@ body {
   line-height: 30px;
   color: #444444;
 }
-.timeline-list{
+
+.timeline-list {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+}
+
+/* Секция подписки на рассылку */
+.subscribe p,
+.contacts-phone {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.field {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  opacity: 0.5;
+}
+
+.subscribe-button {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.it-is-free {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+/* Подвал сайта */
+.footer-page {
+  background: #444444;
+}
+
+.footer-address {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.telegram:before {
+  content: url('../images/footer/telegram.svg')
+}
+
+.youtube:before {
+  content: url('../images/footer/youtube.svg')
+}
+
+.twitter:before {
+  content: url('../images/footer/twitter.svg')
+}
+
+.phone-link {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+.features-link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
