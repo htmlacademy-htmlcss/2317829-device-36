@@ -27,15 +27,18 @@ html {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
   background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1440px;
+  min-height: 100%;
 }
 
 .visually-hidden {
@@ -61,9 +64,13 @@ body {
   margin-top: 40px;
 }
 
+/* возможно нет необходисости в обертке
 .logo-container {
   display: flex;
-}
+  width: 145px;
+  height: 36px;
+} */
+
 .logo-icon {
   display: block;
   margin-top: -20px;
@@ -125,7 +132,6 @@ body {
   border-left: 2px solid #000000;
   background-color: transparent;
   cursor: pointer;
-
 }
 
 .login-button {
@@ -202,16 +208,14 @@ border-radius: 50%;
 .submenu-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
-  width: 1160px;
-  height: 160px;
+  width: 674px;
   background-color: #ffe17f;
-  margin-left: -60px;
 }
 
 .submenu-item {
-  margin: 10px;
-  padding-right: 30px;
+  width: 222px;
 }
 
 .main-menu-item {
@@ -238,8 +242,14 @@ border-radius: 50%;
 
 /* Секция "Хит продаж" */
 .best-selling {
+  display: flex;
   /* Временный цвет фона сладера для отобрацения элементов #ffffff цвета */
   background-color: #f0f0f0;
+  width: 1160px;
+  position: relative;
+  margin-bottom: 70px;
+  margin: 0 auto;
+  list-style-type: none;
 }
 
 .best-selling-slider-item img {
@@ -249,20 +259,42 @@ border-radius: 50%;
 .best-selling-slider {
   counter-reset: item;
   list-style-type: none;
+  padding: 0;
 }
 
 .best-selling-slider-item {
-  display: block
+  display: flex;
+}
+
+.arrows-best-selling {
+  display: flex;
+  width: 530px;
+  position: absolute;
+  top: 186px;
+  left: 30px;
+  justify-content: space-between;
+}
+
+.target-best-selling {
+  display: flex;
+  width: 76px;
+  position: absolute;
+  top: 548px;
+  left: 542px;
+  justify-content: space-between;
 }
 
 .best-selling-slider-item::before {
   content: counter(item, decimal-leading-zero) " ";
   counter-increment: item;
   font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  width: 1160px;
   font-size: 180px;
-  color: #ffffff;
+  background-color: #FFE17F;
   position: absolute;
-  left: 1001px;
+  color: #ffffff;
 }
 
 .best-selling-title {
@@ -344,6 +376,9 @@ border-radius: 50%;
 /* Секция услуг */
 .services-list {
   list-style: none;
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .services-button {
