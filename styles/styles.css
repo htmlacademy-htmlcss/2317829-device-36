@@ -23,21 +23,35 @@
 }
 
 html {
-  height: 100%;
+box-sizing: border-box;
+height: 100%;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* врем. границы блоков (удалить) */
+/* div,
+section,
+ul,
+li,
+a,
+button {
+  border: 1px solid red;
+} */
 
 body {
   font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
   background-color: #ffffff;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 1440px;
   min-height: 100%;
 }
 
@@ -55,42 +69,35 @@ body {
 }
 
 /* Шапка сайта*/
-.header-page {
-  background-color: #ffe17f;
+.wrapper {
+  align-items: center;
   width: 1160px;
-  height: 186px;
-  margin-left: 140px;
-  margin-right: 140px;
-  margin-top: 40px;
+  margin: 0 auto;
 }
 
-/* возможно нет необходисости в обертке
-.logo-container {
-  display: flex;
-  width: 145px;
-  height: 36px;
-} */
+.header-page {
+  background-color: #ffe17f;
+  margin-top: 47px;
+  padding-left: 60px;
+  padding-right: 60px;
 
+}
 .logo-icon {
-  display: block;
   margin-top: -20px;
-  margin-left: 60px;
+
 }
 
 .header-menu {
-  width: 1160px;
   margin: 0 auto;
 }
 
 .navigation-list {
   list-style: none;
   display: flex;
-  width: 1040px;
-  height: 40px;
+  align-items: center;
   padding: 0;
   margin: 0;
-  margin-left: 60px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .search-container {
@@ -153,6 +160,7 @@ body {
 
 .compare-item {
   padding-right: 26px;
+  margin-left: auto;
 }
 
 .compare-item::before {
@@ -186,12 +194,13 @@ border-radius: 50%;
 .main-menu-list {
   list-style: none;
   display: flex;
-  width: 1040px;
-  height: 40px;
+  min-width: 1040px;
   padding: 0;
   margin: 0;
-  margin-left: 60px;
   margin-top: 30px;
+}
+.main-menu-delivery {
+  margin-left: auto;
 }
 
 .main-menu-link {
@@ -206,27 +215,24 @@ border-radius: 50%;
 }
 
 .submenu-list {
+  /*  узнать правильное располож.*/
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  width: 674px;
   background-color: #ffe17f;
 }
-
 .submenu-item {
-  width: 222px;
-}
-
-.main-menu-item {
+  /* врем. отступ  */
   padding-right: 45px;
 }
-
-.catalog-item {
-  width: 293px;
-  padding-left: 0;
-  padding-right: 231px;
+.main-menu-guarantee{
+padding-left: 45px;
 }
+.main-menu-contacts{
+  padding-left: 45px;
+}
+
 
 .submenu-link {
   font-size: 16px;
@@ -243,13 +249,15 @@ border-radius: 50%;
 /* Секция "Хит продаж" */
 .best-selling {
   display: flex;
-  /* Временный цвет фона сладера для отобрацения элементов #ffffff цвета */
-  background-color: #f0f0f0;
+  /* Временный цвет фона сладера для отобрацения элементов #ffffff цвета
+  background-color: #f0f0f0; */
   width: 1160px;
+
   position: relative;
   margin-bottom: 70px;
   margin: 0 auto;
   list-style-type: none;
+
 }
 
 .best-selling-slider-item img {
@@ -292,17 +300,33 @@ border-radius: 50%;
   justify-content: flex-end;
   width: 1160px;
   font-size: 180px;
+  height: 126px;
   background-color: #FFE17F;
   position: absolute;
   color: #ffffff;
 }
+.image-slider {
+  position: absolute;
 
+  z-index: 0;
+}
+.best-selling-info{
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  min-height: 401px;
+  padding-left: 600px;
+
+
+}
 .best-selling-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  position: relative;
+  z-index: 0;
 }
 
 .best-selling-text {
@@ -334,16 +358,16 @@ border-radius: 50%;
 }
 
 /* Секция продуктовых категорий */
+.product-categories {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .product-icon {
   background-color: #ffe17f;
-
 }
 
 .product-categories-list {
-  min-width: 1160px;
-  min-height: 253px;
-  margin-left: 140px;
-  margin-right: 140px;
   text-align: left;
   list-style-type: none;
   display: flex;
@@ -353,7 +377,16 @@ border-radius: 50%;
 .product-categories-item {
   width: 160px;
   height: 253px;
-  padding: 20px;
+  padding: 19px;
+}
+
+.virtual-reality-item {
+  padding-left: 0;
+
+}
+
+.quadcopter-item {
+  padding-right: 0;
 }
 
 .product-categories-item-link {
@@ -374,11 +407,19 @@ border-radius: 50%;
 }
 
 /* Секция услуг */
-.services-list {
-  list-style: none;
-  display: flex;
+.services {
   width: 1160px;
   margin: 0 auto;
+  display: flex;
+}
+
+.services-navigation {
+  display: flex;
+  flex-direction: column;
+  width: 287px;
+  height: 319px;
+  justify-content: space-evenly;
+  border-right: 7px solid #000000;
 }
 
 .services-button {
@@ -390,30 +431,83 @@ border-radius: 50%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 160px;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.services-delivery-slide {
+  min-width: 873px;
+  min-height: 319px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/main/delivery.svg');
+  /* примерные значения background-position */
+  background-position-x: 650px;
+  background-position-y: 70px;
+  background-repeat: no-repeat;
+}
+.services-guarantee-slide{
+  min-width: 873px;
+  min-height: 319px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/main/guarantee.svg');
+  /* примерные значения background-position */
+  background-position-x: 650px;
+  background-position-y: 70px;
+  background-repeat: no-repeat;
+}
+.service-сredit-slide{
+  min-width: 873px;
+  min-height: 319px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/main/credit.svg');
+  /* примерные значения background-position */
+  background-position-x: 650px;
+  background-position-y: 70px;
+  background-repeat: no-repeat;
 }
 
 .services-title {
+  width: 242px;
+  height: 50px;
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  padding-left: 116px;
+  margin: 0;
+  margin-top: 73px;
 }
 
-.services-delivery-slide::after {
-  content: url('../images/main/delivery.svg');
-}
-
-.services-guarantee-slide::after {
-  content: url('../images/main/guarantee.svg');
-}
-
-.service-сredit-slide::after {
-  content: url('../images/main/credit.svg');
+.services-description {
+  width: 500px;
+  height: 90px;
+  display: flex;
+  padding-left: 116px;
 }
 
 /* Секция доставки редких товаров */
-.delivering-rare-title {
+.delivering-rare{
+  display: flex;
+  justify-content:center;
+
+}
+.delivering-rare-button {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -422,6 +516,13 @@ border-radius: 50%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 1160px;
+  height: 100px;
+
 }
 
 /* Секция информации о компании */
