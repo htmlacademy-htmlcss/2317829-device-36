@@ -32,14 +32,11 @@ img {
   height: auto;
 }
 
-/* врем. границы блоков (удалить) */
-/* div,
+/* врем. границы блоков (удалить)
+div,
 section,
-ul,
-li,
-a,
-button {
-  border: 1px solid red;
+ul{
+ border: 1px solid red;
 } */
 
 body {
@@ -69,7 +66,7 @@ body {
 }
 
 /* Шапка сайта*/
-.wrapper {
+.wrapper-index {
   align-items: center;
   width: 1160px;
   margin: 0 auto;
@@ -83,9 +80,9 @@ body {
 
 }
 
-.logo-icon {
-  margin-top: -20px;
-
+.header-logo {
+  position: relative;
+  top: -20px;
 }
 
 .header-menu {
@@ -98,7 +95,6 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
-  margin-top: 20px;
 }
 
 .search-container {
@@ -157,6 +153,7 @@ body {
 
 .login-button::before {
   content: url('../images/header/login.svg');
+  padding-right: 5px;
 }
 
 .compare-item {
@@ -166,6 +163,7 @@ body {
 
 .compare-item::before {
   content: url('../images/header/compare.svg');
+  padding-right: 5px;
 }
 
 .logout-button {
@@ -175,17 +173,32 @@ body {
   padding-right: 26px;
 }
 
-/* врем. реализ. кол-ва товаров в корзине
 .quantity {
   font-size: 14px;
-line-height: 20px;
-color:  #000000;
-background-color: #ffffff;
-border-radius: 50%;
-} */
+  line-height: 20px;
+  color: #000000;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  background: #ffffff;
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.cart-item {
+  display: flex;
+
+}
+
 .cart-item::before {
   content: url('../images/header/cart.svg');
+  margin-right: -32px;
 }
+
 
 .navigation-link {
   color: #000000;
@@ -254,10 +267,7 @@ border-radius: 50%;
 /* Секция "Хит продаж" */
 .best-selling {
   display: flex;
-  /* Временный цвет фона сладера для отобрацения элементов #ffffff цвета
-  background-color: #f0f0f0; */
   width: 1160px;
-
   position: relative;
   margin-bottom: 70px;
   margin: 0 auto;
@@ -515,7 +525,6 @@ border-radius: 50%;
 .delivering-rare {
   display: flex;
   align-content: center;
-
 }
 
 .delivering-rare-button {
@@ -562,11 +571,11 @@ border-radius: 50%;
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .about-us-title,
-.contacts-title,
-.subscribe-title {
+.contacts-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -607,10 +616,69 @@ border-radius: 50%;
 }
 
 /* Секция подписки на рассылку */
+.subscribe {
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  padding: 0 140px;
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.subscribe-wrapper {
+  width: 1158px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.subscribe-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  display: block;
+  margin: 64px 0 144px 10px;
+
+}
+
+.subscribe-text {
+  display: block;
+  margin: 74px 25px 144px auto;
+}
+
+.subscribe-form {
+  width: 1158px;
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.it-is-free {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.it-is-free::before {
+  content: url('../images/main/tick.svg');
+  padding-right: 16px;
+  padding-top: 7px;
+}
+
 .field {
+  width: 557px;
+  height: 54px;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  color: #000;
+  background-color: #f0f0f0;
+  padding: 0;
+  border: 0;
+  border-bottom: 3px solid #949494;
   opacity: 0.5;
 }
 
@@ -622,9 +690,19 @@ border-radius: 50%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 39px;
+  width: 253px;
+  height: 57px;
+  border: 3px solid #c4c4c4;
 }
 
 /* Каталог */
+
 .inner-catalog-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -640,6 +718,17 @@ border-radius: 50%;
   color: #000000;
   list-style-type: none;
   display: flex;
+}
+
+.wrapper-catalog {
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  padding: 0 140px;
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .breadcrumbs-link {
@@ -790,29 +879,96 @@ border-radius: 50%;
 /* Подвал сайта */
 .footer-page {
   background: #444444;
-  color: #000000;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 62px 140px;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.features {
+  width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.features-list {
+  width: 444px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+
 }
 
 .footer-address {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  margin: 0;
+
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 35px;
+
 }
 
 .social-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  margin-right: 340px;
 }
 
 .telegram:before {
-  content: url('../images/footer/telegram.svg')
+  content: url('../images/footer/telegram.svg');
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
 }
 
 .youtube::before {
-  content: url('../images/footer/youtube.svg')
+  content: url('../images/footer/youtube.svg');
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
 }
 
 .twitter::before {
-  content: url('../images/footer/twitter.svg')
+  content: url('../images/footer/twitter.svg');
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
 }
 
 .phone-link {
@@ -822,8 +978,8 @@ border-radius: 50%;
   text-decoration: none;
 }
 
-.features-list {
-  list-style: none;
+.footer-phone {
+  margin: 0;
 }
 
 .features-link {
