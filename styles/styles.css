@@ -32,13 +32,6 @@ img {
   height: auto;
 }
 
-/* врем. границы блоков (удалить)
-div,
-section,
-ul{
- border: 1px solid red;
-} */
-
 body {
   font-family: "Rubik", sans-serif;
   display: flex;
@@ -70,6 +63,7 @@ body {
   align-items: center;
   width: 1160px;
   margin: 0 auto;
+  padding: 0 140px;
 }
 
 .header-page {
@@ -619,11 +613,10 @@ body {
 .subscribe {
   background-color: #f0f0f0;
   margin: 0 auto;
-  padding: 0 140px;
+  justify-content: center;
   width: 1440px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   box-sizing: border-box;
 }
 
@@ -709,6 +702,9 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  display: flex;
+  margin: 35px 0 16px 60px;
+
 }
 
 /* Хлебные крошки */
@@ -718,21 +714,25 @@ body {
   color: #000000;
   list-style-type: none;
   display: flex;
+  padding: 0;
+  margin: 0 0 34px 60px;
 }
 
 .wrapper-catalog {
-  background-color: #f0f0f0;
-  margin: 0 auto;
-  padding: 0 140px;
   width: 1440px;
+  background: #f0f0f0;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 140px;
 }
 
 .breadcrumbs-link {
   padding-right: 36px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .breadcrumbs-arrow::before {
@@ -743,10 +743,32 @@ body {
 
 /* Секция фильтрции и сортировки продуктов */
 .product-filter {
-  background-color: #f0f0f0;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.product-filter-title,
+.cost-range,
+.cost-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+.cost-control-input {
+  width: 200px;
+}
+
+
 .product-sorting-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -755,18 +777,39 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+}
+
+.product-filter-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 30px 110px 60px 0;
+  margin: 0;
 }
 
 .filter-subtitle {
+  width: 200px;
+  border-top: 2px solid #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .product-sorting-form {
   background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
 }
 
 .color-control,
@@ -774,6 +817,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  padding-bottom: 17px;
 }
 
 .cost-control-range {
@@ -785,36 +829,101 @@ body {
 }
 
 .select-control {
+  font-family: inherit;
+  font-size: inherit;
   color: #000000;
+  background-color: #f0f0f0;
+  border: 0;
+  cursor: pointer;
 }
+
+.product-filter-button {
+  width: 220px;
+  border: 0;
+  cursor: pointer;
+}
+
+.sorting-button-up {
+  background-color: #f0f0f0;
+  border: 0;
+  cursor: pointer;
+}
+
+.sorting-button-down {
+  background-color: #f0f0f0;
+  border: 0;
+  cursor: pointer;
+}
+
 
 .sorting-button-up::before {
   content: url('../images/catalog/triangle-up.svg');
+  opacity: 0.2;
 }
 
 .sorting-button-down::before {
   content: url('../images/catalog/triangle-down.svg');
+  opacity: 0.2;
 }
 
 /* Секция продуктовых карточек */
+.wrapper-product-card {
+  width: 840px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .product-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 70px;
+}
+
+.product-card-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-title-price {
+  display: flex;
 }
 
 .product-card-title {
+  width: 210px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 44px;
 }
 
 .product-card-price {
+  width: 150px;
   line-height: 21px;
   text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 32px;
+  margin-bottom: 44px;
 }
 
 /* Пагинация */
+.product-card-pagination {
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+}
+
 .show-more {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -823,16 +932,35 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  width: 760px;
+  height: 55px;
+  background-color: #ffffff;
+  margin: 0 40px;
+  border: 3px solid #e5e5e5
 }
 
 .pagination {
   background-color: #f0f0f0;
   list-style-type: none;
   display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 44px 40px 78px;
 }
 
 .pagination-item {
-  padding: 15px;
+  padding: 20px 16px;
+}
+
+.pagination-item-back {
+  margin-right: auto;
+  padding: 25px;
+}
+
+.pagination-item-next {
+  margin-left: auto;
+  padding: 25px;
 }
 
 .pagination-back {
@@ -845,7 +973,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  padding-right: 170px;
+
 }
 
 .pagination-next {
@@ -858,7 +986,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  padding-left: 170px;
+  text-decoration: none
 }
 
 .pagination-disabled {
@@ -868,8 +996,10 @@ body {
 .pagination-link {
   font-size: 16px;
   line-height: 20px;
+  color: #444444;
   text-align: center;
   opacity: 0.3;
+  text-decoration: none
 }
 
 .pagination-current {
