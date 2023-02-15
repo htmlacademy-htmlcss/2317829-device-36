@@ -59,19 +59,16 @@ body {
 }
 
 /* Шапка сайта*/
-.wrapper-index {
-  align-items: center;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 140px;
-}
 
 .header-page {
-  background-color: #ffe17f;
-  margin-top: 47px;
-  padding-left: 60px;
-  padding-right: 60px;
+  width: 1160px;
+  margin: 0 auto;
+}
 
+.wrapper-header {
+  margin-top: 40px;
+  background-color: #ffe17f;
+  padding: 0 60px;
 }
 
 .header-logo {
@@ -245,7 +242,6 @@ body {
   padding-left: 45px;
 }
 
-
 .submenu-link {
   font-size: 16px;
   line-height: 18px;
@@ -266,7 +262,6 @@ body {
   margin-bottom: 70px;
   margin: 0 auto;
   list-style-type: none;
-
 }
 
 .best-selling-slider-item img {
@@ -317,7 +312,6 @@ body {
 
 .image-slider {
   position: absolute;
-
   z-index: 0;
 }
 
@@ -327,8 +321,6 @@ body {
   width: 560px;
   min-height: 401px;
   padding-left: 600px;
-
-
 }
 
 .best-selling-title {
@@ -421,8 +413,11 @@ body {
 /* Секция услуг */
 .services {
   width: 1160px;
-  margin: 0 auto;
+  padding: 0 140px;
+  margin: 70px auto;
   display: flex;
+  background: linear-gradient(to bottom, #ffffff 102px, #f0f0f0 0%);
+
 }
 
 .services-navigation {
@@ -519,6 +514,8 @@ body {
 .delivering-rare {
   display: flex;
   align-content: center;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .delivering-rare-button {
@@ -564,8 +561,8 @@ body {
 .container-contact-info {
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  width: 1160px;
+  margin: 70px auto;
 }
 
 .about-us-title,
@@ -695,6 +692,10 @@ body {
 }
 
 /* Каталог */
+.inner-catalog-header {
+width: 1160px;
+margin: 0 auto;
+}
 
 .inner-catalog-title {
   font-family: "Raleway", sans-serif;
@@ -723,10 +724,8 @@ body {
   background: #f0f0f0;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   box-sizing: border-box;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 140px;
 }
 
 .breadcrumbs-link {
@@ -821,6 +820,7 @@ body {
 }
 
 .cost-control-range {
+  width: 200px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
