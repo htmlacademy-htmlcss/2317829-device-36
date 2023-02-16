@@ -182,7 +182,6 @@ body {
 
 .cart-item {
   display: flex;
-
 }
 
 .cart-item::before {
@@ -386,7 +385,6 @@ body {
 
 .virtual-reality-item {
   padding-left: 0;
-
 }
 
 .quadcopter-item {
@@ -417,7 +415,6 @@ body {
   margin: 70px auto;
   display: flex;
   background: linear-gradient(to bottom, #ffffff 102px, #f0f0f0 0%);
-
 }
 
 .services-navigation {
@@ -621,7 +618,6 @@ body {
   width: 1158px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .subscribe-title {
@@ -632,7 +628,6 @@ body {
   color: #000000;
   display: block;
   margin: 64px 0 144px 10px;
-
 }
 
 .subscribe-text {
@@ -705,7 +700,6 @@ margin: 0 auto;
   color: #000000;
   display: flex;
   margin: 35px 0 16px 60px;
-
 }
 
 /* Хлебные крошки */
@@ -1033,8 +1027,6 @@ margin: 0 auto;
   justify-content: space-between;
   padding: 0;
   margin: 0;
-
-
 }
 
 .footer-address {
@@ -1042,14 +1034,12 @@ margin: 0 auto;
   line-height: 20px;
   color: #ffffff;
   margin: 0;
-
 }
 
 .socials {
   display: flex;
   justify-content: flex-end;
   margin-top: 35px;
-
 }
 
 .social-list {
