@@ -42,7 +42,6 @@ body {
   background-color: #ffffff;
   margin: 0;
   min-height: 100%;
-
 }
 
 .visually-hidden {
@@ -249,7 +248,7 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background-color: #ffe17f;
+  background-color: transparent;
   text-align: left;
   padding: 0;
   position: relative;
@@ -298,7 +297,6 @@ body {
   position: relative;
   margin: 0 auto;
   list-style-type: none;
-  margin-bottom: 70px;
 }
 
 .best-selling-slider-item img {
@@ -310,6 +308,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  word-wrap: break-word;
 }
 
 .best-selling-slider-item {
@@ -325,15 +324,6 @@ body {
   justify-content: space-between;
 }
 
-.target-best-selling {
-  display: flex;
-  width: 76px;
-  position: absolute;
-  top: 548px;
-  left: 542px;
-  justify-content: space-between;
-}
-
 .best-selling-slider-item::before {
   content: counter(item, decimal-leading-zero) " ";
   counter-increment: item;
@@ -343,7 +333,7 @@ body {
   width: 1160px;
   font-size: 180px;
   height: 126px;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   position: absolute;
   color: #ffffff;
 }
@@ -386,6 +376,7 @@ body {
   text-decoration: none;
 }
 
+
 .table-content {
   font-size: 36px;
   color: #000000;
@@ -398,6 +389,60 @@ body {
   padding-left: 40px;
   padding-top: 12px;
 }
+
+.arrow-back {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-back:hover,
+.arrow-back:active {
+  opacity: 0.3;
+}
+
+.arrow-next {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-next:hover,
+.arrow-next:active {
+  opacity: 0.3;
+}
+
+.target-best-selling {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 45%;
+  bottom: -10px;
+}
+
+.target {
+  min-width: 12px;
+  height: 12px;
+  border: 2px solid #000000;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.target:hover,
+.target:active {
+  opacity: 0.3;
+}
+
+.target-active {
+  background-color: #000000;
+}
+
+
 
 /* Секция продуктовых категорий */
 .product-categories {
@@ -442,11 +487,10 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  width: 160px;
   min-height: 60px;
   letter-spacing: -0.02em;
-  display: flex;
   padding-top: 32px;
+  word-wrap: break-word;
 }
 
 /* Секция услуг */
@@ -493,6 +537,7 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  word-wrap: break-word;
 }
 
 .services-delivery-slide {
@@ -526,9 +571,7 @@ body {
 }
 
 .services-title {
-  width: 242px;
-  height: 50px;
-  display: flex;
+  width: 500px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -601,6 +644,14 @@ body {
   margin: 70px auto;
 }
 
+
+.about-us,
+.contacts {
+  display: block;
+  max-width: 540px;
+  word-wrap: break-word;
+}
+
 .about-us-title,
 .contacts-title {
   font-family: "Raleway", sans-serif;
@@ -608,19 +659,56 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  word-wrap: break-word;
+  margin-top: 40px;
+  padding-bottom: 18px;
+
+}
+
+.container-contact-info p {
+  margin: 0;
+  margin-top: 30px;
+
+}
+
+.container-contact-info h3 {
+  margin: 0;
+  margin-top: 30px;
+
 }
 
 .delivery-item {
-  padding-top: 19px;
+  list-style-type: none;
+  position: relative;
+  margin-left: 36px;
+}
+
+.delivery-item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.delivery-item::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  left: -35px;
+  top: 7px;
+  border-radius: 50%;
+  background-color: #ffc700;
 }
 
 .delivery-list {
   font-weight: 700;
-  font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+  margin: 30px 0;
+  padding: 0;
+
 }
+
 
 .contacts h3 {
   font-weight: 700;
@@ -631,6 +719,7 @@ body {
   font-style: normal;
 }
 
+
 .contacts-phone {
   font-style: normal;
   color: inherit;
@@ -640,12 +729,16 @@ body {
 .timeline-list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 /* Секция подписки на рассылку */
 .subscribe {
   background: #f0f0f0;
   padding: 64px 0 56px;
+  word-wrap: break-word;
 }
 
 .subscribe-wrapper {
@@ -658,14 +751,15 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  max-width: 400px;
   color: #000000;
-  display: block;
   margin: 0 0 144px 10px;
 }
 
 .subscribe-text {
   display: block;
   margin: 10px 25px 144px 0;
+  max-width: 530px;
 }
 
 .subscribe-form {
@@ -675,8 +769,7 @@ body {
 
 .it-is-free {
   margin-left: auto;
-  display: flex;
-  align-items: center;
+  max-width: 250px;
 }
 
 .it-is-free::before {
@@ -1055,6 +1148,8 @@ body {
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  margin-right: 50px;
+
 }
 
 .footer-address {
@@ -1062,6 +1157,8 @@ body {
   line-height: 20px;
   color: #ffffff;
   margin: 0;
+  max-width: 250px;
+  word-wrap: break-word;
 }
 
 .socials {
@@ -1074,10 +1171,17 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 150px;
   padding: 0;
-  margin: 0;
-  margin-right: 340px;
+  margin: 0 auto;
+  justify-self: center;
+  transform: translateX(50%);
+  flex-wrap: wrap;
+  max-width: 200px;
+}
+
+.social-item {
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .telegram:before {
@@ -1124,10 +1228,14 @@ body {
   line-height: 20px;
   color: #ffffff;
   text-decoration: none;
+  text-align: right;
+
 }
 
 .footer-phone {
   margin: 0;
+  word-wrap: break-word;
+  max-width: 200px;
 }
 
 .features-link {
@@ -1139,4 +1247,12 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+
+}
+
+.html-academy-wrapper {
+  display: flex;
+  max-width: 200px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
 }
