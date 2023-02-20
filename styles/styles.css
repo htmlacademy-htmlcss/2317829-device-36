@@ -74,10 +74,10 @@ body {
   padding: 0 60px;
 }
 
-.wrapper-header {
+/* .wrapper-header {
   background-color: #ffe17f;
   padding: 0 60px;
-}
+} */
 
 .header-logo {
   position: relative;
@@ -97,9 +97,6 @@ body {
   margin: 0;
 }
 
-.search-container {
-  width: 517px;
-}
 
 .search {
   border: 2px solid #000000;
@@ -198,7 +195,6 @@ body {
   margin-right: -32px;
 }
 
-
 .navigation-link {
   color: #000000;
   text-decoration: none;
@@ -207,15 +203,32 @@ body {
 .main-menu-list {
   list-style: none;
   display: flex;
-  /* flex-wrap: wrap; */
-  min-width: 1040px;
+  flex-wrap: wrap;
+  max-width: 640px;
   padding: 0;
   margin: 0;
   margin-top: 30px;
+  flex-direction: row-reverse;
+  align-content: flex-start;
 }
 
-.main-menu-delivery {
-  margin-left: auto;
+.main-menu-catalog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 400px;
+  margin-top: 26px;
+  padding-bottom: 36px;
+}
+
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-menu-item {
+  margin-left: 45px;
 }
 
 .main-menu-link {
@@ -229,26 +242,39 @@ body {
   text-decoration: none;
 }
 
+.open-submenu {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: #ffe17f;
+  text-align: left;
+  padding: 0;
+  position: relative;
+  height: 50px;
+  width: 293px;
+  background-image: url('../images/header/ellipsу-plus.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.open-submenu:hover,
+.open-submenu:active {
+  background-image: url('../images/header/ellipsу-minus.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 .submenu-list {
   /*  узнать правильное располож.*/
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
-  background-color: #ffe17f;
-}
-
-.submenu-item {
-  /* врем. отступ  */
-  padding-right: 45px;
-}
-
-.main-menu-guarantee {
-  padding-left: 45px;
-}
-
-.main-menu-contacts {
-  padding-left: 45px;
+  display: none;
 }
 
 .submenu-link {
@@ -392,6 +418,7 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-top: 70px;
 }
 
 .product-categories-item {
