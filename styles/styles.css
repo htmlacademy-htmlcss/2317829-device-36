@@ -598,14 +598,6 @@ body {
 }
 
 .delivering-rare-button {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #000000;
   background-color: #f0f0f0;
   padding: 0;
   border: none;
@@ -614,6 +606,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.delivering-rare-title{
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 800px;
+  word-wrap: break-word;
 }
 
 .delivering-rare-button::before {
@@ -879,7 +881,6 @@ body {
 .filter-group {
   border: 0;
   position: relative;
-  cursor: pointer;
   display: grid;
   grid-template-columns: 200px;
 }
