@@ -314,9 +314,6 @@ div .main-menu-catalog:hover div {
   display: block;
 }
 
-.open-submenu:hover .ellipsу-plus svg {
-  opacity: 1;
-}
 .open-submenu {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -327,9 +324,6 @@ div .main-menu-catalog:hover div {
   background-color: transparent;
   width: 296px;
   height: 50px;
-  /* background-image: url(../images/header/ellipsу-plus.svg);
-  background-position: right;
-  background-repeat: no-repeat; */
   cursor: pointer;
   position: relative;
   top: 5px;
@@ -348,6 +342,9 @@ margin-left: auto;
 background: transparent;
 border: 2px solid #000000;
 border-radius: 50%;
+position: absolute;
+left: 243px;
+top: -3px;
 }
 
 
@@ -357,12 +354,10 @@ border-radius: 50%;
 .ellipsу-plus:active{
   opacity: 1;
 }
-/* .open-submenu:hover,
-.open-submenu:active {
-  background-image: url('../images/header/ellipsу-minus.svg');
-  background-position: right;
-  background-repeat: no-repeat;
-} */
+
+.open-submenu:hover .ellipsу-plus svg {
+  opacity: 1;
+}
 
 .submenu-list {
   box-sizing: border-box;
