@@ -24,7 +24,7 @@
                 </button>
               </form>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item login-item">
               <button class="login-button navigation-link" type="button">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="15" height="12" fill="none" viewBox="0 0 15 12">
@@ -58,28 +58,40 @@
         </nav>
         <nav class="main-menu">
           <div class="main-menu-catalog">
-            <a class="open-submenu" >Каталог товаров</a>
-
-            <ul class="submenu-list">
-              <li class="submenu-item virtual-reality-submenu">
-                <a class="submenu-link" href="c">Виртуальная реальность</a>
-              </li>
-              <li class="submenu-item monopod-submenu">
-                <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
-              </li>
-              <li class="submenu-item action-camera-submenu">
-                <a class="submenu-link" href="#">Экшн-камеры</a>
-              </li>
-              <li class="submenu-item fitness-bracelets-submenu">
-                <a class="submenu-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="submenu-item smart-watch-submenu">
-                <a class="submenu-link" href="#">Умные часы</a>
-              </li>
-              <li class="submenu-item quadcopter-submenu">
-                <a class="submenu-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
+            <div class="open-submenu-wrapper">
+              <a class="open-submenu" href="catalog.html">
+                Каталог товаров
+                <svg class="ellipsу-plus" width="50" height="51" viewBox="0 0 50 51" fill="none" aria-hidden="true"
+                  focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#000" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" />
+                  <defs>
+                    <path fill="#000" d="M17 17h16v16H17z" />
+                  </defs>
+                </svg>
+              </a>
+            </div>
+            <div class="submenu-wrapper">
+              <ul class="submenu-list">
+                <li class="submenu-item virtual-reality-submenu">
+                  <a class="submenu-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="submenu-item monopod-submenu">
+                  <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="submenu-item action-camera-submenu">
+                  <a class="submenu-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="submenu-item fitness-bracelets-submenu">
+                  <a class="submenu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="submenu-item smart-watch-submenu">
+                  <a class="submenu-link" href="#">Умные часы</a>
+                </li>
+                <li class="submenu-item quadcopter-submenu">
+                  <a class="submenu-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <ul class="main-menu-list">
             <li class="main-menu-item main-menu-delivery">
