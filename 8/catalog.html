@@ -19,7 +19,8 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <form class="search" method="get" action="https://echo.htmlacademy.ru/">
-                <input class="search-input-field" name="search" placeholder="Поиск по сайту" type="search">
+                <input class="search-input-field" name="search" autocomplete="off" placeholder="Поиск по сайту"
+                  type="search">
                 <button class="search-button" type="submit">
                   <span>Найти</span>
                 </button>
@@ -27,19 +28,22 @@
             </li>
             <li class="navigation-item login-item">
               <button class="login-button navigation-link" type="button">
-                <svg class="navigation-icon"aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="12" fill="none" viewBox="0 0 15 12">
-                  <path fill="#000" d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z"/>
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="12" fill="none" viewBox="0 0 15 12">
+                  <path fill="#000"
+                    d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z" />
                 </svg>
                 Коля Петухов
               </button>
             </li>
             <li class="navigation-item logout-item">
-              <a class="logout-button disabled-logout" href="#" >Выйти</a>
+              <a class="logout-button disabled-logout" href="#">Выйти</a>
             </li>
             <li class="navigation-item compare-item">
               <a class="navigation-link" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="none" viewBox="0 0 10 12">
-                    <path fill="#000" d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/>
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="10" height="12" fill="none" viewBox="0 0 10 12">
+                  <path fill="#000" d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" />
                 </svg>
                 Сравнить
               </a>
@@ -47,8 +51,10 @@
             <li class="navigation-item cart-item">
               <span class="quantity">2</span>
               <a class="navigation-link" href="#">
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14">
-                  <path fill="#000" d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"/>
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="14" fill="none" viewBox="0 0 16 14">
+                  <path fill="#000"
+                    d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" />
                 </svg>
                 Корзина
               </a>
@@ -83,13 +89,13 @@
               </div>
             </li>
             <li class="main-menu-item main-menu-delivery">
-              <a class="main-menu-link" href="#delivery">Доставка</a>
+              <a class="main-menu-link" href="index.html#delivery">Доставка</a>
             </li>
             <li class="main-menu-item main-menu-guarantee">
-              <a class="main-menu-link" href="#guarantee">Гарантия</a>
+              <a class="main-menu-link" href="index.html#guarantee">Гарантия</a>
             </li>
             <li class="main-menu-item main-menu-contacts">
-              <a class="main-menu-link" href="#contacts">Контакты</a>
+              <a class="main-menu-link" href="index.html#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -107,7 +113,7 @@
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item  breadcrumbs-arrow">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
+            <a class="breadcrumbs-link this-page">Моноподы для селфи</a>
           </li>
         </ul>
       </header>
@@ -119,39 +125,63 @@
             <form class="product-filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="cost-filter-group filter-group">
                 <legend class="cost-subtitle filter-subtitle">Стоимость</legend>
-                <label class="cost-range">
-                  <input class="cost-control-input" type="range" min="0" max="5000" step="500" value="0" name="min">
-                </label>
-                <label class="cost-control">
-                  <input class="cost-control-input" type="range" min="0" max="5000" step="500" value="3000" name="max">
-                </label>
-                <p class="cost-control-range">от 0 до 5000</p>
+                <div class="cost-slider">
+                  <button class="cost-slider-button cost-slider-button-min" type="button"></button>
+                  <span class="cost-slider-range"></span>
+                  <span class="cost-slider-fill"></span>
+                  <button type="button" class="cost-slider-button cost-slider-button-max"></button>
+                </div>
+                <div class="cost-inputs-container">
+                  <label class="cost-input-label cost-input-label-min">
+                    от
+                    <input class="cost-input" min="0" type="number" name="min-price" value="0">
+                  </label>
+                  <label class="cost-input-label cost-input-label-max">
+                    до
+                    <input class="cost-input" min="0" type="number" name="max-price" value="5000">
+                  </label>
+                </div>
+
               </fieldset>
               <fieldset class="color-filter-group filter-group">
                 <legend class="color-subtitle filter-subtitle">Цвет</legend>
                 <label class="color-control">
-                  <input class="color-control-input" type="checkbox" name="black" checked>Чёрный
+                  <input class="color-control-input visually-hidden" type="checkbox" name="black" checked>
+                  <span class="color-control-checkbox"></span>
+                  Чёрный
                 </label>
                 <label class="color-control">
-                  <input class="color-control-input" type="checkbox" name="white" checked>Белый
+                  <input class="color-control-input visually-hidden" type="checkbox" name="white" checked>
+                  <span class="color-control-checkbox"></span>
+                  Белый
                 </label>
                 <label class="color-control">
-                  <input class="color-control-input" type="checkbox" name="blue">Синий
+                  <input class="color-control-input visually-hidden" type="checkbox" name="blue">
+                  <span class="color-control-checkbox"></span>
+                  Синий
                 </label>
                 <label class="color-control">
-                  <input class="color-control-input" type="checkbox" name="red">Красный
+                  <input class="color-control-input visually-hidden" type="checkbox" name="red">
+                  <span class="color-control-checkbox"></span>
+                  Красный
                 </label>
                 <label class="color-control">
-                  <input class="color-control-input" type="checkbox" name="pink">Розовый
+                  <input class="color-control-input visually-hidden" type="checkbox" name="pink">
+                  <span class="color-control-checkbox"></span>
+                  Розовый
                 </label>
               </fieldset>
               <fieldset class="bluetooth-filter-group filter-group">
                 <legend class="bluetooth-subtitle filter-subtitle">Bluetooth</legend>
                 <label class="bluetooth-control">
-                  <input class="bluetooth-control-input" type="radio" name="bluetooth" value="enabled" checked>Есть
+                  <input class="bluetooth-control-input visually-hidden" type="radio" name="bluetooth" value="enabled" checked>
+                  <span class="bluetooth-control-radio"></span>
+                  Есть
                 </label>
                 <label class="bluetooth-control">
-                  <input class="bluetooth-control-input" type="radio" name="bluetooth" value="disabled">Нет
+                  <input class="bluetooth-control-input visually-hidden" type="radio" name="bluetooth" value="disabled">
+                  <span class="bluetooth-control-radio"></span>
+                  Нет
                 </label>
               </fieldset>
               <button class="product-filter-button button" type="submit">Показать</button>
@@ -161,21 +191,32 @@
             <form class="product-sorting-form">
               <h3 class="product-sorting-title">Сортировка:</h3>
               <select class="select-control" aria-label="Сортировка">
-                <option value="default">По умолчанию </option>
+                <option value="default">Новинки </option>
                 <option value="popular" selected>Популярные</option>
                 <option value="cheap">По цене</option>
               </select>
               <div class="sorting">
-                <button class="sorting-button-up" type="button" aria-label="Вверх"></button>
-                <button class="sorting-button-down" type="button" aria-label="Вниз"></button>
+                <button class="sorting-button-up" type="button" aria-label="Вверх">
+                  <svg class="sorting-control-up" width="12" height="10" viewBox="0 0 12 10" aria-hidden="true"
+                    focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m6 0 5.5 10H.5" />
+                  </svg>
+                </button>
+                <button class="sorting-button-down" type="button" aria-label="Вниз">
+                  <svg class="sorting-control-down" width="12" height="10" viewBox="0 0 12 10" aria-hidden="true"
+                    focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 10 .5 0h11" />
+                  </svg>
+                </button>
               </div>
             </form>
             <div class="wrapper-product-card">
               <ul class="product-list">
                 <li class="product-card-item">
-                  <a class="product-card-link" href="#">
+                  <a class="product-card-link product-card-button " href="#">
                     <img class="product-card-image" src="images/catalog/product-1.jpg" width="360" height="360"
                       alt="Любительская селфи-палка, держатель хромированный.">
+                    <span class="product-card-link-more">Подробнее</span>
                   </a>
                   <div class="wrapper-title-price">
                     <h4 class="product-card-title">Любительская <br>
@@ -184,33 +225,36 @@
                   </div>
                 </li>
                 <li class="product-card-item">
-                  <a class="product-card-link" href="#">
+                  <a class="product-card-link product-card-button " href="#">
                     <img class="product-card-image" src="images/catalog/product-2.jpg" width="360" height="360"
                       alt="Профессиональная селфи-палка, черного цвета.">
+                    <span class="product-card-link-more ">Подробнее</span>
                   </a>
                   <div class="wrapper-title-price">
                     <h4 class="product-card-title">Профессиональная<br> селфи-палка</h4>
-                    <span class="product-card-price">1500 ₽</span>
+                    <span class="product-card-price">1 500 ₽</span>
                   </div>
                 </li>
                 <li class="product-card-item">
-                  <a class="product-card-link" href="#">
+                  <a class="product-card-link product-card-button " href="#">
                     <img class="product-card-image" src="images/catalog/product-3.jpg" width="360" height="360"
                       alt="Непотопляемая селфи-палка, желтого цвета.">
+                    <span class="product-card-link-more">Подробнее</span>
                   </a>
                   <div class="wrapper-title-price">
                     <h4 class="product-card-title">Непотопляемая<br> селфи-палка</h4>
-                    <span class="product-card-price">2500 ₽</span>
+                    <span class="product-card-price">2 500 ₽</span>
                   </div>
                 </li>
                 <li class="product-card-item">
-                  <a class="product-card-link" href="#">
+                  <a class="product-card-link product-card-button " href="#">
                     <img class="product-card-image" src="images/catalog/product-4.jpg" width="360" height="360"
                       alt="Селфи-палка в форме человеческой руки.">
+                    <span class="product-card-link-more">Подробнее</span>
                   </a>
                   <div class="wrapper-title-price">
                     <h4 class="product-card-title">Селфи-палка «Следуй<br> за мной»</h4>
-                    <span class="product-card-price">1500 ₽</span>
+                    <span class="product-card-price">1 500 ₽</span>
                   </div>
                 </li>
               </ul>
@@ -260,30 +304,30 @@
         <nav class="features">
           <ul class="features-list">
             <li class="features-item">
-              <a class="features-link" href="#">Доставка</a>
+              <a class="features-link" href="index.html#delivery">Доставка</a>
             </li>
             <li class="features-item">
-              <a class="features-link" href="#">Гарантия</a>
+              <a class="features-link" href="index.html#guarantee">Гарантия</a>
             </li>
             <li class="features-item">
-              <a class="features-link" href="#">Контакты</a>
+              <a class="features-link" href="index.html#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
         <nav class="socials">
           <h3 class="visually-hidden">Социальные сети</h3>
           <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link telegram" href="https://t.me/htmlacademy">
+            <li class="social-item social-item-telegram">
+              <a class="social-link telegram " href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
-            <li class="social-item">
+            <li class="social-item social-item-youtube">
               <a class="social-link youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
               </a>
             </li>
-            <li class="social-item">
+            <li class="social-item social-item-twitter">
               <a class="social-link twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Twitter</span>
               </a>
@@ -298,10 +342,15 @@
         </div>
         <div class="html-academy-wrapper">
           <a class="html-academy-link" href="https://htmlacademy.ru/">
-            <img class="html-academy-icon" src="images/footer/html-academy.svg" width="115" height="33"
-              alt=".html academy">
+            <svg class="html-academy-icon" width="115" height="33" fill="none" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 33">
+              <path
+                d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2.1c-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 17.9a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
+            </svg>
           </a>
         </div>
       </div>
     </footer>
   </body>
+
+</html>
