@@ -17,8 +17,8 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <form class="search" method="get" action="https://echo.htmlacademy.ru/">
-                <input class="search-input-field" name="search" autocomplete="off" placeholder="Поиск по сайту"
+              <form class="search" method="post" action="https://echo.htmlacademy.ru/">
+                <input class="search-input-field" name="site search" autocomplete="off" placeholder="Поиск по сайту"
                   type="search">
                 <button class="search-button" type="submit">
                   <span>Найти</span>
@@ -60,7 +60,7 @@
         <nav class="main-menu">
           <ul class="main-menu-list">
             <li class="main-menu-item main-menu-catalog">
-              <a class="main-menu-link catalog-link" href="#">Каталог товаров</a>
+              <a class="main-menu-link catalog-link clickable-circle" href="#">Каталог товаров</a>
               <div class="submenu-wrapper">
                 <ul class="submenu-list">
                   <li class="submenu-item virtual-reality-submenu">
@@ -381,6 +381,62 @@
         </div>
       </div>
     </footer>
+    <div class="modal-window-container modal-window-close">
+      <section class="modal-window-content">
+        <h2 class="modal-window-title">Доставка под заказ</h2>
+        <button class="modal-window-button-close state-default" type="button">
+          <span class="visually-hidden">Закрыть модальное окно.</span>
+        </button>
+        <form action="https://echo.htmlacademy.ru/" method="get" class="modal-window-form">
+          <fieldset class="modal-window-fieldset fieldset-user">
+            <legend class="visually-hidden">Информация о пользователе</legend>
+            <div class="field-group">
+              <label class="modal-window-label" for="subscribe-user">Ваше имя:</label>
+              <input type="text" class="modal-window-input modal-window-input-user" id="subscribe-user"
+                placeholder="Введите имя" name="modal window user name" required>
+              <span class="modal-window-input-user-name-text">Добавьте имя</span>
+            </div>
+            <div class="field-group">
+              <label class="modal-window-label" for="subscribe-email">Ваш e-mail:</label>
+              <input class="modal-window-input modal-window-input-email" type="email" id="subscribe-email"
+                placeholder="Введите почту" name="modal window user email" value="почта" required>
+              <span class="modal-window-input-user-error-text">Забавный у вас адрес</span>
+            </div>
+          </fieldset>
+          <fieldset class="modal-window-fieldset fieldset-order">
+            <legend class="visually-hidden">Информация о товаре.</legend>
+            <div class="field-group">
+              <label class="modal-window-label" for="order-description">Что нужно привезти:</label>
+              <input class="modal-window-input modal-window-input-order" type="text" id="order-description"
+                placeholder="В свободной форме" name="modal window order description" required>
+            </div>
+            <div class="field-group field-group-tool-tip">
+              <label class="modal-window-label shows-tip" tabindex="0">Количество:
+                <button class="button-tool-tip" type="button" tabindex="-1" aria-labelledby="modal-window-tool-tip">
+                  <span class="visually-hidden">Подсказка.</span>
+                </button>
+              </label>
+              <span class="modal-window-tool-tip" id="modal-window-tool-tip">
+                Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+              </span>
+              <div class="modal-window-quantity-container">
+                <button class="modal-window-quantity input-decrease" type="button">
+                  <span class="visually-hidden">Уменьшить заказ на одну позицию.</span>
+                </button>
+                <label>
+                  <input class="modal-window-input modal-window-input-quantity" type="number"
+                    name="modal window item quantity" required value="1">
+                </label>
+                <button class="modal-window-quantity input-increase" type="button">
+                  <span class="visually-hidden">Увеличить заказ на одну позицию.</span>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+          <button class="modal-window-button-send button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
   </body>
 
 </html>
