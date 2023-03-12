@@ -48,8 +48,7 @@
               </a>
             </li>
             <li class="navigation-item cart-item">
-              <span class="quantity">2</span>
-              <a class="navigation-link" href="#">
+              <a class="navigation-link cart-link" href="#" data-count="2">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="14" fill="none" viewBox="0 0 16 14">
                   <path fill="#000"
@@ -57,6 +56,40 @@
                 </svg>
                 Корзина
               </a>
+              <div class="popover popover-hidden">
+                <h2 class="visually-hidden">Корзина</h2>
+                <div class="popover-cart-item">
+                  <a href="#" class="popover-link-item state-default">
+                    <img class="popover-link-image" width="39" height="43" src="images/popover/popover-product-1.jpg"
+                      alt="">
+                    <span class="popover-link-name">Любительская селфи-палка</span>
+                  </a>
+                  <button class="popover-button-delete-item state-default" type="button">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </div>
+                <div class="popover-cart-item">
+                  <a href="#" class="popover-link-item state-default">
+                    <img class="popover-link-image" width="39" height="43" src="/images/popover/popover-product-2.jpg"
+                      alt="">
+                    <span class="popover-link-name">Профессиональная селфи-палка</span>
+                  </a>
+                  <button class="popover-button-delete-item state-default" type="button">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </div>
+                <div class="popover-cart-price">
+                  <p class="popover-cart-price-item">
+                    Товаров: <span class="popover-cart-price-amount">2</span>
+                  </p>
+                  <p class="popover-cart-price-item">
+                    Сумма: <span class="popover-cart-price-currency">2000</span> ₽
+                  </p>
+                </div>
+                <div class="popover-open-cart">
+                  <a class="popover-open-cart-link" href="#">Открыть корзину</a>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
