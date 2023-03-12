@@ -18,7 +18,7 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <form class="search" method="get" action="https://echo.htmlacademy.ru/">
-                <input class="search-input-field" name="search" autocomplete="off" placeholder="Поиск по сайту"
+                <input class="search-input-field" name="site search" autocomplete="off" placeholder="Поиск по сайту"
                   type="search">
                 <button class="search-button" type="submit">
                   <span>Найти</span>
@@ -48,8 +48,7 @@
               </a>
             </li>
             <li class="navigation-item cart-item">
-              <span class="quantity">2</span>
-              <a class="navigation-link" href="#">
+              <a class="navigation-link cart-link" href="#" data-count="2">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="14" fill="none" viewBox="0 0 16 14">
                   <path fill="#000"
@@ -57,13 +56,47 @@
                 </svg>
                 Корзина
               </a>
+              <div class="popover popover-hidden">
+                <h2 class="visually-hidden">Корзина</h2>
+                <div class="popover-cart-item">
+                  <a href="#" class="popover-link-item state-default">
+                    <img class="popover-link-image" width="39" height="43" src="images/popover/popover-product-1.png"
+                    alt="Любительская селфи-палка, держатель хромированный.">
+                    <span class="popover-link-name">Любительская селфи-палка</span>
+                  </a>
+                  <button class="popover-button-delete-item state-default" type="button">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </div>
+                <div class="popover-cart-item">
+                  <a href="#" class="popover-link-item state-default">
+                    <img class="popover-link-image" width="39" height="43" src="/images/popover/popover-product-2.png "
+                    alt="Профессиональная селфи-палка, черного цвета.">
+                    <span class="popover-link-name">Профессиональная селфи-палка</span>
+                  </a>
+                  <button class="popover-button-delete-item state-default" type="button">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </div>
+                <div class="popover-cart-price">
+                  <p class="popover-cart-price-item">
+                    Товаров: <span class="popover-cart-price-amount">2</span>
+                  </p>
+                  <p class="popover-cart-price-item">
+                    Сумма: <span class="popover-cart-price-currency">2000</span> ₽
+                  </p>
+                </div>
+                <div class="popover-open-cart">
+                  <a class="popover-open-cart-link" href="#">Открыть корзину</a>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
         <nav class="main-menu">
           <ul class="main-menu-list">
             <li class="main-menu-item main-menu-catalog">
-              <a class="main-menu-link" href="catalog.html">Каталог товаров</a>
+              <a class="main-menu-link catalog-link ellips clickable-circle" href="#">Каталог товаров</a>
               <div class="submenu-wrapper">
                 <ul class="submenu-list">
                   <li class="submenu-item virtual-reality-submenu">
@@ -173,7 +206,8 @@
               <fieldset class="bluetooth-filter-group filter-group">
                 <legend class="bluetooth-subtitle filter-subtitle">Bluetooth</legend>
                 <label class="bluetooth-control">
-                  <input class="bluetooth-control-input visually-hidden" type="radio" name="bluetooth" value="enabled" checked>
+                  <input class="bluetooth-control-input visually-hidden" type="radio" name="bluetooth" value="enabled"
+                    checked>
                   <span class="bluetooth-control-radio"></span>
                   Есть
                 </label>

@@ -17,8 +17,8 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <form class="search" method="get" action="https://echo.htmlacademy.ru/">
-                <input class="search-input-field" name="search" autocomplete="off" placeholder="Поиск по сайту"
+              <form class="search" method="post" action="https://echo.htmlacademy.ru/">
+                <input class="search-input-field" name="site search" autocomplete="off" placeholder="Поиск по сайту"
                   type="search">
                 <button class="search-button" type="submit">
                   <span>Найти</span>
@@ -45,8 +45,7 @@
               </a>
             </li>
             <li class="navigation-item cart-item">
-              <span class="quantity">2</span>
-              <a class="navigation-link" href="#">
+              <a class="navigation-link cart-link" href="#" data-count="2">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="14" fill="none" viewBox="0 0 16 14">
                   <path fill="#000"
@@ -54,13 +53,47 @@
                 </svg>
                 Корзина
               </a>
+              <div class="popover popover-hidden">
+                <h2 class="visually-hidden">Корзина</h2>
+                <div class="popover-cart-item">
+                  <a href="#" class="popover-link-item state-default">
+                    <img class="popover-link-image" width="39" height="43" src="images/popover/popover-product-1.png"
+                    alt="Любительская селфи-палка, держатель хромированный.">
+                    <span class="popover-link-name">Любительская селфи-палка</span>
+                  </a>
+                  <button class="popover-button-delete-item state-default" type="button">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </div>
+                <div class="popover-cart-item">
+                  <a href="#" class="popover-link-item state-default">
+                    <img class="popover-link-image" width="39" height="43" src="images/popover/popover-product-2.png"
+                    alt="Профессиональная селфи-палка, черного цвета.">
+                    <span class="popover-link-name">Профессиональная селфи-палка</span>
+                  </a>
+                  <button class="popover-button-delete-item state-default" type="button">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </div>
+                <div class="popover-cart-price">
+                  <p class="popover-cart-price-item">
+                    Товаров: <span class="popover-cart-price-amount">2</span>
+                  </p>
+                  <p class="popover-cart-price-item">
+                    Сумма: <span class="popover-cart-price-currency">2000</span> ₽
+                  </p>
+                </div>
+                <div class="popover-open-cart">
+                  <a class="popover-open-cart-link" href="#">Открыть корзину</a>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
         <nav class="main-menu">
           <ul class="main-menu-list">
             <li class="main-menu-item main-menu-catalog">
-              <a class="main-menu-link catalog-link" href="catalog.html">Каталог товаров</a>
+              <a class="main-menu-link catalog-link clickable-circle" href="#">Каталог товаров</a>
               <div class="submenu-wrapper">
                 <ul class="submenu-list">
                   <li class="submenu-item virtual-reality-submenu">
@@ -122,7 +155,7 @@
               </table>
             </div>
           </li>
-          <li class="best-selling-slider-item fitness-bracelet visually-hidden">
+          <li class="best-selling-slider-item fitness-bracelet">
             <img class="image-slider" src="images/main/slider-2.png" width="560" height="560"
               alt="Фитнес-браслет черного цвета, с надписью на экране: «Я вижу, что ты снова ешь».">
             <div class="best-selling-info ">
@@ -141,7 +174,7 @@
               </table>
             </div>
           </li>
-          <li class="best-selling-slider-item selfie-stick visually-hidden">
+          <li class="best-selling-slider-item selfie-stick">
             <img class="image-slider" src="images/main/slider-3.png" width="560" height="560"
               alt="Три селфи палки черного цвета, одной модели, в разных положениях.">
             <div class="best-selling-info">
@@ -243,7 +276,7 @@
                     мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </div>
               </li>
-              <li class="services-item visually-hidden">
+              <li class="services-item services-guarantee-close">
                 <div class="services-guarantee-slide" id="guarantee">
                   <h3 class="services-title">Гарантия</h3>
                   <p class="services-description">Если из-за возгорания купленного у нас товара у вас
@@ -251,7 +284,7 @@
                     Товар, не дом, конечно же.</p>
                 </div>
               </li>
-              <li class="services-сredit visually-hidden">
+              <li class="services-сredit services-сredit-close">
                 <div class="service-сredit-slide">
                   <h3 class="services-title">Кредит</h3>
                   <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут
@@ -358,7 +391,7 @@
               </a>
             </li>
             <li class="social-item social-item-twitter">
-              <a class="social-link twitter"  href="https://twitter.com/htmlacademy_ru">
+              <a class="social-link twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>
@@ -381,6 +414,62 @@
         </div>
       </div>
     </footer>
+    <div class="modal-window-container modal-window-close">
+      <section class="modal-window-content">
+        <h2 class="modal-window-title">Доставка под заказ</h2>
+        <button class="modal-window-button-close state-default" type="button">
+          <span class="visually-hidden">Закрыть модальное окно.</span>
+        </button>
+        <form action="https://echo.htmlacademy.ru/" method="get" class="modal-window-form">
+          <fieldset class="modal-window-fieldset fieldset-user">
+            <legend class="visually-hidden">Информация о пользователе</legend>
+            <div class="field-group">
+              <label class="modal-window-label" for="subscribe-user">Ваше имя:</label>
+              <input type="text" class="modal-window-input modal-window-input-user" id="subscribe-user"
+                placeholder="Введите имя" name="modal window user name" required>
+              <span class="modal-window-input-user-name-text">Добавьте имя</span>
+            </div>
+            <div class="field-group">
+              <label class="modal-window-label" for="subscribe-email">Ваш e-mail:</label>
+              <input class="modal-window-input modal-window-input-email" type="email" id="subscribe-email"
+                placeholder="Введите почту" value="почта" name="modal window user email" required>
+              <span class="modal-window-input-user-error-text">Забавный у вас адрес</span>
+            </div>
+          </fieldset>
+          <fieldset class="modal-window-fieldset fieldset-order">
+            <legend class="visually-hidden">Информация о товаре.</legend>
+            <div class="field-group">
+              <label class="modal-window-label" for="order-description">Что нужно привезти:</label>
+              <input class="modal-window-input modal-window-input-order" type="text" id="order-description"
+                placeholder="В свободной форме" name="modal window order description" required>
+            </div>
+            <div class="field-group field-group-tool-tip">
+              <label class="modal-window-label shows-tip" tabindex="0">Количество:
+                <button class="button-tool-tip" type="button" tabindex="-1">
+                  <span class="visually-hidden">Дополнительная информация.</span>
+                </button>
+              </label>
+              <span class="modal-window-tool-tip">
+                Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+              </span>
+              <div class="modal-window-quantity-container">
+                <button class="modal-window-quantity input-decrease" type="button">
+                  <span class="visually-hidden">Уменьшить заказ на одну позицию.</span>
+                </button>
+                <label>
+                  <input class="modal-window-input modal-window-input-quantity" type="number"
+                    name="modal window item quantity" required value="1">
+                </label>
+                <button class="modal-window-quantity input-increase" type="button">
+                  <span class="visually-hidden">Увеличить заказ на одну позицию.</span>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+          <button class="modal-window-button-send button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
   </body>
 
 </html>
