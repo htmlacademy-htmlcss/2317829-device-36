@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
 
   <body>
@@ -143,13 +144,13 @@
               <p class="best-selling-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
               <a class="best-selling-link button" href="#">Подробнее</a>
-              <table>
-                <tr class="">
+              <table  class="best-selling-table">
+                <tr>
                   <td class="table-content">800 м</td>
                   <td class="table-content">50 м</td>
                 </tr>
                 <tr>
-                  <td class="table-title">Дальность полёта</td>
+                  <td class="table-title">Дальность полета</td>
                   <td class="table-title">Радиус поражения</td>
                 </tr>
               </table>
@@ -164,7 +165,7 @@
               <p class="best-selling-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
                 и соблюдать диету.</p>
               <a class="best-selling-link button" href="#">Подробнее</a>
-              <table>
+              <table class="best-selling-table">
                 <tr>
                   <td class="table-content">48 часов</td>
                 </tr>
@@ -183,7 +184,7 @@
               <p class="best-selling-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                 Карл!) метров длиной и весом всего 5 кг. </p>
               <a class="best-selling-link button" href="#">Подробнее</a>
-              <table>
+              <table class="best-selling-table">
                 <tr>
                   <td class="table-content">8,5 м</td>
                   <td class="table-content">5 кг</td>
@@ -329,8 +330,8 @@
           </address>
           <h3 class="timeline-title">Время работы</h3>
           <ul class="timeline-list">
-            <li class="timeline-item">пн–пт: с 10:00 до 22:00</li>
-            <li class="timeline-item">сб–вс: с 10:00 до 19:00</li>
+            <li class="timeline-item">пн—пт: с 10:00 до 22:00</li>
+            <li class="timeline-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
           <a class="feedback-link button" href="#">Напишите нам</a>
         </section>
@@ -347,7 +348,7 @@
             <input class="email-input-field" autocomplete="off" placeholder="Ваш e-mail" type="email"
               name="subscribe-email" required>
             <button class="subscribe-button" type="submit">Подписаться</button>
-            <span class="it-is-free">Это бесплатно!</span>
+            <span class="it-is-free">Это бесплатно</span>
           </form>
         </div>
       </section>
@@ -367,13 +368,13 @@
         <nav class="features">
           <ul class="features-list">
             <li class="features-item">
-              <a class="features-link" href="index.html#delivery">Доставка</a>
+              <a class="features-link features-link-delivery" href="#delivery">Доставка</a>
             </li>
             <li class="features-item">
-              <a class="features-link" href="index.html#guarantee">Гарантия</a>
+              <a class="features-link features-link-guarantee" href="#guarantee">Гарантия</a>
             </li>
             <li class="features-item">
-              <a class="features-link" href="index.html#contacts">Контакты</a>
+              <a class="features-link features-link-contacts" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -458,7 +459,7 @@
                 </button>
                 <label>
                   <input class="modal-window-input modal-window-input-quantity" type="number"
-                    name="modal window item quantity" required value="1">
+                    name="modal window item quantity" min="1" value="1" required >
                 </label>
                 <button class="modal-window-quantity input-increase" type="button">
                   <span class="visually-hidden">Увеличить заказ на одну позицию.</span>
