@@ -186,7 +186,7 @@ body {
   line-height: 20px;
   color: #000000;
   width: 158px;
-  height: 36px;
+  min-height: 36px;
   padding: 0;
   border: none;
   border-left: 2px solid #000000;
@@ -261,25 +261,6 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
-.quantity {
-  font-size: 14px;
-  line-height: 20px;
-  color: #000000;
-  border-radius: 50%;
-  width: 21px;
-  height: 21px;
-  background: #ffffff;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  margin-top: 4px;
-  position: relative;
-  right: -6px;
-  z-index: 1;
-  cursor: pointer;
-}
-
 .cart-item {
   display: flex;
   position: relative;
@@ -298,7 +279,7 @@ body {
   line-height: 14px;
   color: #000000;
   border-radius: 50%;
-  width: 21px;
+  min-width: 21px;
   height: 21px;
   background: #ffffff;
   display: flex;
@@ -454,8 +435,9 @@ body {
   align-items: center;
   cursor: pointer;
 }
+
 .clickable-circle:focus-visible {
-z-index: 2;
+  z-index: 2;
 }
 
 .open-submenu {
@@ -477,20 +459,20 @@ z-index: 2;
 }
 
 .submenu-list {
-    list-style-type: none;
-    margin: 0;
-    margin-top: -17px;
-    padding: 0;
-    background-color: #ffe17f;
-    padding-left: 60px;
-    padding-bottom: 40px;
-    padding-top: 30px;
-    display: grid;
-    grid-template-columns: 222px 181px 211px;
-    grid-template-rows: 31px 31px 35px;
-    gap: 5px 30px;
-    word-wrap: break-word;
-    line-height: 0.9em;
+  list-style-type: none;
+  margin: 0;
+  margin-top: -17px;
+  padding: 0;
+  background-color: #ffe17f;
+  padding-left: 60px;
+  padding-bottom: 44px;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 222px 181px 211px;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px 30px;
+  word-wrap: break-word;
+  line-height: 0.9em;
 }
 
 .submenu-link {
@@ -516,32 +498,38 @@ z-index: 2;
 .virtual-reality-submenu {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  margin-bottom: 13px;
 }
 
 .monopod-submenu {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  margin-bottom: 13px;
 }
 
 .action-camera-submenu {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  margin-bottom: 13px;
 }
 
 .fitness-bracelets-submenu {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  margin-bottom: 13px;
 }
 
 .smart-watch-submenu {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  margin-bottom: 13px;
 }
 
 .quadcopter-submenu {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
   margin-left: 1px;
+  margin-bottom: 13px;
 }
 
 /* Основное содержание */
@@ -735,10 +723,12 @@ z-index: 2;
   background-color: transparent;
   cursor: pointer;
 }
+
 .arrow-back:hover,
-.arrow-next:hover{
+.arrow-next:hover {
   opacity: 0.6;
 }
+
 .arrow-back:active,
 .arrow-next:active {
   opacity: 0.3;
@@ -765,7 +755,7 @@ z-index: 2;
   cursor: pointer;
 }
 
-.target:hover{
+.target:hover {
   opacity: 0.6;
 }
 
@@ -834,7 +824,7 @@ z-index: 2;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-top: 105px;
+  margin-top: 108px;
 }
 
 .product-categories-item {
@@ -1028,11 +1018,9 @@ z-index: 2;
 
 .services-description {
   width: 500px;
-  height: 90px;
-  display: flex;
+  min-height: 100px;
   margin-left: 116px;
   margin-top: 34px;
-  box-sizing: content-box;
 }
 
 .services-guarantee-close {
@@ -1401,13 +1389,10 @@ z-index: 2;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 18px 39px;
-  padding-left: 45px;
+  padding: 15px 20px;
+  padding-left: 25px;
   width: 253px;
-  height: 57px;
+  min-height: 57px;
   border: 3px solid #c4c4c4;
 }
 
