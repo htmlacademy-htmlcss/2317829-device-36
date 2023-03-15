@@ -726,10 +726,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 542px;
+  width: 530px;
   position: absolute;
   top: 174px;
-  left: 24px;
+  left: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -884,6 +884,10 @@ body {
 .arrow-back {
   border: none;
   background-color: transparent;
+  background-image: url('../images/main/slide-left-arrow.svg');
+  width: 20px;
+  height: 60px;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -896,6 +900,10 @@ body {
 .arrow-next {
   border: none;
   background-color: transparent;
+  background-image: url('../images/main/slide-right-arrow.svg');
+  width: 20px;
+  height: 60px;
+  padding: 0;
   cursor: pointer;
 }
 
