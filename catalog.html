@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Моноподы для селфи — Каталог товаров / Интернет-магазин «Девайс»</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -62,7 +62,7 @@
                 <div class="popover-cart-item">
                   <a href="#" class="popover-link-item state-default">
                     <img class="popover-link-image" width="39" height="43" src="images/popover/popover-product-1.png"
-                    alt="Любительская селфи-палка, держатель хромированный.">
+                      alt="Любительская селфи-палка, держатель хромированный.">
                     <span class="popover-link-name">Любительская селфи-палка</span>
                   </a>
                   <button class="popover-button-delete-item state-default" type="button">
@@ -72,7 +72,7 @@
                 <div class="popover-cart-item">
                   <a href="#" class="popover-link-item state-default">
                     <img class="popover-link-image" width="39" height="43" src="/images/popover/popover-product-2.png "
-                    alt="Профессиональная селфи-палка, черного цвета.">
+                      alt="Профессиональная селфи-палка, черного цвета.">
                     <span class="popover-link-name">Профессиональная селфи-палка</span>
                   </a>
                   <button class="popover-button-delete-item state-default" type="button">
@@ -159,10 +159,14 @@
               <fieldset class="cost-filter-group filter-group">
                 <legend class="cost-subtitle filter-subtitle">Стоимость</legend>
                 <div class="cost-slider">
-                  <button class="cost-slider-button cost-slider-button-min" type="button"></button>
+                  <button class="cost-slider-button cost-slider-button-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную стоимость.</span>
+                  </button>
                   <span class="cost-slider-range"></span>
                   <span class="cost-slider-fill"></span>
-                  <button type="button" class="cost-slider-button cost-slider-button-max"></button>
+                  <button class="cost-slider-button cost-slider-button-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную стоимость.</span>
+                  </button>
                 </div>
                 <div class="cost-inputs-container">
                   <label class="cost-input-label cost-input-label-min">
